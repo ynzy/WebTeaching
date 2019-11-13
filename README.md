@@ -24,11 +24,14 @@ git commit -m '我提交乐一条记录'
 ···js
 git push
 ```
+下面的话自己翻译一下
 ```js
 nothing to commit, working tree clean
-// 这句话的意思自己翻一下
-```
 
+```
+```js
+1 file changed, 68 insertions(+), 1 deletion(-)
+```
 
 ## 你的vscode没有设置自动保存
 所以，这个我写的文件还是个空的
@@ -95,3 +98,11 @@ D:\qianduan\webTeaching>
 保存提交你来，我看看
 
 
+
+
+## 打开工作空间，我从头开始演示
+这样就打开了
+就先用这种方式把
+我在说一个
+code .
+也可以
