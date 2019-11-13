@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+
+
+
+        /* ··················子容器是有弹性的（flex 即弹性），它们会自动填充剩余空间，子容器的伸缩比例由 flex 属性确定。························ */
+
+        /* 单独设置子容器如何沿交叉轴排列：align-self */
+        .warper {
+            display: flex;
+            align-items:flex-end;
+            width: 800px;
+            height: 400px;
+            background: pink;
+        }
+        .sone_first {
+            align-self: baseline;
+            /* width: 50px; */
+            background: red;
+        }
+        .sone_second {
+            align-self: flex-start;
+            /* width: 50px; */
+            background: green;
+        }
+        .sone_three {
+            align-self: stretch;
+            /* width: 50px; */
+            background: orange;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <!-- 设置子容器如何沿交叉轴排列：align-self -->
+    <div class="warper">
+        <div class="sone_first">111112222</div>
+        <div class="sone_second">221</div>
+        <div class="sone_three">322222</div>
+    </div>
+</body>
+
+</html>
+<script>
+/*
+这样能看出来了嘛
+以后写样式表，不要用id，id一般都是用来dom操作得，就是js
+样式表用class雷鸣
+以后再说规范吧，先记住这一个
+把你电脑分辨率调调
+我这几乎就看不见了
+尽量用chrome，用热更新
+live Server
+*/
+</script>

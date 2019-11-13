@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style type="text/css">
-        /* 父容器设置子容器沿主轴排列：justify-content */
+
+
+
+        /* ··················父容器设置子容器沿主轴排列：justify-content························ */
         #dad {
             width: 800px;
             height: 400px;
@@ -67,8 +70,10 @@
               /* ···············基线排列················ */
             /* baseline：基线对齐，这里的 baseline 默认是指首行文字，即 first baseline，所有子容器向基线对齐，交叉轴起点到元素基线距离最大的子容器将会与交叉轴起始端相切以确定基线。 */
             /* align-items: baseline; */
+
+              /* ···············拉伸排列················ */
             /*子容器沿交叉轴方向的尺寸拉伸至与父容器一致 */
-            align-items:stretch;
+            align-items:stretch;/*子容器不能设置高度，不然没法起作用*/
         }
 
         #son-11 {
