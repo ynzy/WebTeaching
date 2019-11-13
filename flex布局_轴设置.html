@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        /* ··················轴包括主轴和交叉轴，
+        justify-content属性决定子容器沿主轴得排列方向，
+        align-items属性决定子容器沿交叉轴的排列方向
+        flex-direction属性决定主轴的方向，交叉轴的方向由主轴确定························ */
+
+        /* 主轴的起始端由flex-start,末尾端由flex-end表示*/
+       flex-direction:row；/*向右1,2*/
+        flex-direction:column；/*向下1,2*/
+        flex-direction:row-reverse；/*向左2,1*/
+        flex-direction:column-reverse；/*向上2,1*/
+       
+
+        /* 向右：flex-direction */
+        .warper {
+            display: flex;
+            flex-direction:row-reverse;
+            /* width: 800px;
+            height: 300px; */
+            background: pink;
+        }
+
+        .sone_first {
+            flex: 1;
+            /* width: 80px; */
+            background: red;
+        }
+
+        .sone_second {
+            flex: 2;
+            /* width: 50px; */
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 设置子容器如何沿交叉轴排列：align-self -->
+    <div class="warper">
+        <div class="sone_first">1</div>
+        <div class="sone_second">221</div>
+    </div>
+</body>
+
+</html>
+<script>
+    /*
+这样能看出来了嘛
+以后写样式表，不要用id，id一般都是用来dom操作得，就是js
+样式表用class雷鸣
+以后再说规范吧，先记住这一个
+把你电脑分辨率调调
+我这几乎就看不见了
+尽量用chrome，用热更新
+live Server
+*/
+</script>
