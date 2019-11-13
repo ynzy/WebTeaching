@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        /* 父容器设置子容器沿主轴排列：justify-content */
+        #dad {
+            width: 800px;
+            height: 400px;
+            background: pink;
+            display: flex;
+            /* justify-content：属性用于定义如何沿着主轴方向排列子容器。 */
+
+            /* ···············位置排列················ */
+            /* 起始端对齐 */
+            /* justify-content:flex-start; */
+            /* 末尾端对齐 */
+            /* justify-content:flex-end; */
+            /* 居中对齐 */
+            /* justify-content:center; */
+
+            /* ···············分布排列················ */
+            /* 子容器沿主轴均匀分布，位于首尾两端的子容器到父容器的距离是子容器间距的一半。 */
+            /* justify-content:space-around; */
+            /* 子容器沿主轴均匀分布，位于首尾两端的子容器与父容器相切。 */
+            justify-content: space-between;
+        }
+
+        #son-1 {
+            width: 120px;
+            height: 120px;
+            background: red;
+        }
+
+        #son-2 {
+            width: 80px;
+            height: 30px;
+            background: green;
+        }
+
+        #son-3 {
+            width: 100px;
+            height: 80px;
+            background: orange;
+        }
+
+        /* 父容器设置设置子容器如何沿交叉轴排列：align-items */
+        #dad1 {
+            width: 800px;
+            height: 400px;
+            background: pink;
+            display: flex;
+            /* align-items：属性用于定义如何沿着交叉轴方向分配子容器的间距。 */
+
+             /* ···············位置排列················ */
+            /* 起始端对齐 */
+            /* align-items:flex-start; */
+            /* 末尾端对齐 */
+            /* align-items:flex-end; */
+            /* 居中对齐 */
+            /* align-items:center; */
+
+              /* ···············基线排列················ */
+            /* baseline：基线对齐，这里的 baseline 默认是指首行文字，即 first baseline，所有子容器向基线对齐，交叉轴起点到元素基线距离最大的子容器将会与交叉轴起始端相切以确定基线。 */
+            /* align-items: baseline; */
+            /*子容器沿交叉轴方向的尺寸拉伸至与父容器一致 */
+            align-items:stretch;
+        }
+
+        #son-11 {
+            width: 120px;
+            
+            background: red;
+        }
+
+        #son-22 {
+            width: 80px;
+            height: 80px;
+            background: green;
+        }
+
+        #son-33 {
+            width: 100px;
+            height: 100px;
+            background: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- /* 父容器设置子容器沿主轴排列：justify-content */ -->
+    <!-- <div id="dad">
+        <div id="son-1"></div>
+        <div id="son-2"></div>
+        <div id="son-3"></div>
+    </div> -->
+
+    <!-- 设置子容器如何沿交叉轴排列：align-items -->
+    <div id="dad1">
+        <div id="son-11">11</div>
+        <div id="son-22">223</div>
+        <div id="son-33">3334</div>
+    </div>
+</body>
+
+</html>
