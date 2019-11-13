@@ -77,17 +77,6 @@
    <img src="" alt="" title="">
    
 
-* <meta/>
-  <link rel="stylesheet" href="" />
-
-  <hr />
-  <br />
-
-  <input type="" />
-
-  <img src="" alt="" />
-
-  <area shape="" coords="" href="" alt="" />
 
 ## 4. 图片标签的属性有哪些及其作用
 
@@ -265,8 +254,77 @@ p{color: #369;}
 
 ```html
 
-```
+1、固定宽高的div
+<div class="wrapper">
+  <div class="content"></div>
+</div>
+以下方式全部是水平及垂直居中
 
+方法一：padding填充
+.content{
+    margin: 0 auto;
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+方法二：绝对定位
+.wrapper{
+    position: relative;
+}
+
+.content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+不固定宽高的div
+
+方法四：absolute + margin: auto;
+.wrapper{
+    position: relative;
+}
+.content{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+方法五：absolute + transform
+.content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%,-50%);
+  background-color: red;
+}
+方法六：父级flex布局
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+方法七：父级table布局
+.wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content{
+    margin: 0 auto;
+}
 ## 11. 精灵图的优缺点
 
 ```html
@@ -339,6 +397,6 @@ Example: div { margin: 20px 10px 30px 40px; }  // 表示对象外边距，顶20
 
 2.设置段落 p {text-align:center;} 将要实现的并不是段落本身的对齐方式，而是段落内元素居中对齐。
 
-3. 设置图片标签img {margin:0 auto;} ，就犯了一个小错误，img类于内联对象，不可以设置图片img标签的margin属性，如果一定要设置，那么先将它的属性转变为块元素，如下面的代 码：img {display:block; margin:0 auto;}
+1. 设置图片标签img {margin:0 auto;} ，就犯了一个小错误，img类于内联对象，不可以设置图片img标签的margin属性，如果一定要设置，那么先将它的属性转变为块元素，如下面的代 码：img {display:block; margin:0 auto;}
 
 
