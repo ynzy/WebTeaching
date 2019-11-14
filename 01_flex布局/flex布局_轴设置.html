@@ -13,40 +13,70 @@
         flex-direction属性决定主轴的方向，交叉轴的方向由主轴确定························ */
 
         /* 主轴的起始端由flex-start,末尾端由flex-end表示*/
-       flex-direction:row；/*向右1,2*/
-        flex-direction:column；/*向下1,2*/
-        flex-direction:row-reverse；/*向左2,1*/
-        flex-direction:column-reverse；/*向上2,1*/
+        /*向右1,2 向下1,2 右左倒叙2,1 向上2,1*/
+       /* flex-direction:row；
+        flex-direction:column；
+        flex-direction:row-reverse；
+        flex-direction:column-reverse； */
        
 
-        /* 向右：flex-direction */
+       
         .warper {
             display: flex;
-            flex-direction:row-reverse;
+            /* flex-direction:row; */
+            /* flex-direction:column; */
+            /* flex-direction:row-reverse; */
+            flex-direction:column-reverse;
             /* width: 800px;
             height: 300px; */
             background: pink;
         }
 
-        .sone_first {
+        .sone_one {
             flex: 1;
-            /* width: 80px; */
+            width: 80px;
             background: red;
         }
 
-        .sone_second {
+        .sone_two {
             flex: 2;
-            /* width: 50px; */
+            width: 50px;
+            background: green;
+        }
+        .sone_three {
+            flex: 1;
+            width: 80px;
+            background: red;
+        }
+
+        .sone_four {
+            flex: 2;
+            width: 50px;
+            background: green;
+        }
+        .sone_five {
+            flex: 1;
+            width: 80px;
+            background: red;
+        }
+
+        .sone_six {
+            flex: 2;
+            width: 50px;
             background: green;
         }
     </style>
 </head>
 
 <body>
-    <!-- 设置子容器如何沿交叉轴排列：align-self -->
+    <!-- 轴设置：flex-direction -->
     <div class="warper">
-        <div class="sone_first">1</div>
-        <div class="sone_second">221</div>
+        <div class="sone_one">1</div>
+        <div class="sone_two">2</div>
+        <div class="sone_three">3</div>
+        <div class="sone_four">4</div>
+        <div class="sone_five">5</div>
+        <div class="sone_six">6</div>
     </div>
 </body>
 

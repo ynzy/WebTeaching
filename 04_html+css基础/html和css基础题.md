@@ -159,7 +159,7 @@ target:规定在何处打开链接文档。_blank 新窗口打开 _self当前窗
 * 标签的权重值为1
 * style的权重值为
 * 伪类的权重值为
-* note: 特殊性！important
+* note: 重要性！important
 
 
 ## 4. 字体样式(字体,字号,颜色等等,有关字体样式的css列举出来)
