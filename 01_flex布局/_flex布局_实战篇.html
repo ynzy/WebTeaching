@@ -8,29 +8,14 @@
   <title>flex布局实战</title>
 </head>
 <style>
-  /* 单项目 */
-  .box {
-      width:900px;
-      height:900px;
-      /* 主轴对齐 */
-      display:flex;
-      /* justify-content:flex-end; */
-      /* 交叉轴轴对齐 */
-      /* align-content:space-between; */
-      background:grey; 
-  } 
   /* 双项目 */
   .box1 {
       width: 900px;
       height:900px;
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:flex-end;
-      /* 轴方向 */
-      /* flex-direction:column; */
-      /* 交叉轴对齐 */
-      /* align-items: flex-end; */
-      align-content:space-between;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-content: space-between;
       background:grey;
   }
 
@@ -41,43 +26,15 @@
     border-radius: 50%;
 
   }
-  .item:nth-child(2) {
-    /* align-self:center; */
-    width: 300px;
-    height: 300px;
-    background: orange;
-    border-radius: 50%;
-
-  }
-  .item:nth-child(3) {
-    /* align-self:flex-start; */
-    width: 300px;
-    height: 300px;
-    background: orange;
-    border-radius: 50%;
-
-  }
-  .item:nth-child(4) {
-    /* align-self:flex-end; */
-    width: 300px;
-    height: 300px;
-    background: orange;
-    border-radius: 50%;
-
-  }
- 
-
-  /* .box {
-    display: flex;
-    justify-content: flex-end;
-  } */
-
 </style>
 
 <body>
   <!-- http://www.ruanyifeng.com/blog/2015/07/flex-examples.html -->
   <!-- http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html -->
   <!-- https://juejin.im/post/58e3a5a0a0bb9f0069fc16bb -->
+  <!-- 问题的答案 -->
+  <!-- https://blog.csdn.net/txfyteen/article/details/82663029 -->
+  <!-- https://www.runoob.com/cssref/css3-pr-align-content.html -->
   <!-- 所见即所得 -->
   <div class="box1">
     <div class="item">1</div>
