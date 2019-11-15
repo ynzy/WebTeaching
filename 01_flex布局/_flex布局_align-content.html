@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex布局实战</title>
+</head>
+<style>
+    /* align-conten 会设置自由盒内部各个项目在垂直方向排列方式 
+    条件：
+    父元素设置display:flex;
+    轴排列方式为横向排列flex-direction:row;
+    父元素设置换行：flex-wrap:wrap;
+
+    设置对象：
+    该属性对容器内的项目起作用，对父元素设置
+
+    取值：
+    stretch是默认值，会拉伸容器内每个项目占用的空间，
+    填充方式为给每个项目下方增加空白，第一个默认项目从容器顶端开始排列。
+
+
+    */
+    .box1 {
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-content: stretch; */
+        /* align-content: center; */
+        /* align-content:flex-start; */
+        /* align-content:flex-end; */
+        /* align-content: space-between; */
+        align-content: space-around;
+        height: 200px;
+        background-color: grey;
+    }
+
+    .item1 {
+        width: 100px;
+        height: 30px;
+        background: orange;
+    }
+    .item2 {
+        width: 100px;
+        height: 30px;
+        background: red;
+    }
+    .item3 {
+        width: 100px;
+        height: 30px;
+        background: #08a9b5;
+    }
+    .item4 {
+        width: 100px;
+        height: 30px;
+        background: #9ad1c3;
+    }
+    .item5 {
+        width: 100px;
+        height: 30px;
+        background: rgb(21,123,126);
+    }
+  
+</style>
+
+<body>
+    <!-- http://www.ruanyifeng.com/blog/2015/07/flex-examples.html -->
+    <!-- http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html -->
+    <!-- https://juejin.im/post/58e3a5a0a0bb9f0069fc16bb -->
+    <!-- 问题的答案 -->
+    <!-- https://blog.csdn.net/txfyteen/article/details/82663029 -->
+    <!-- https://www.runoob.com/cssref/css3-pr-align-content.html -->
+    <!-- 所见即所得 -->
+    <div class="box1">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+    <!-- <div class="box">
+    <span class="item">123</span>
+  </div> -->
+
+</body>
+
+</html>
+<script>
+    /*
+1. 慕课网html+css做完
+2. html+css的题给你
+3. 总结html+css
+4. flex布局
+5. 总结flex布局
+6. 粘连布局
+*/
+</script>
