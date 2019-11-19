@@ -65,13 +65,13 @@ git branch
 
 ## 切换到指定分支
 ```shell
-git checkout <分支名>
+git checkout <demo:xulei>
 ```
 现在就是在远程的xulei分支上了，提交代码
 
 ## 绑定本地分支到要提交到的远程分支
 ```shell
-git push origin HEAD:<name-of-remote-branch>
+git push origin HEAD:<demo:xulei>
 ```
 
 
