@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  div {
+    display: inline-grid;
+  }
+
+  .warper {
+    width: 100%;
+  }
+
+  .container {
+    display: grid;
+    width: 100%;
+    /* grid-template-columns: [c1] 100px [c2] 100px [c3] auto [c4];
+    grid-template-rows: [r1] 100px [r2] 100px [r3] auto [r4]; */
+    /* grid-template-columns: repeat(12, 1fr); */
+    /* grid-template-columns: repeat(3, 30%); */
+    /* grid-template-rows: repeat(3, 30%); */
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    /* grid-template-areas: "header . header"
+                         "main . sidebar"
+                         "footer . footer"; */
+    grid-auto-flow: row dense;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .c1 {
+    border: 1px solid red;
+  }
+
+  .container div {
+    /* width: 100px; */
+  }
+</style>
+
+<body>
+  <div class="warper">
+    <div class="title">foo</div>
+    <div class="container">
+      <div style="background: #bf2316;">1</div>
+      <div style="background: #c56014;">2</div>
+      <div style="background: #3c7126;">3</div>
+      <div style="background: #035069;">4</div>
+      <div style="background: #9a505f;">5</div>
+      <div style="background: #c68e55;">6</div>
+      <div style="background: #907145;">7</div>
+      <div style="background: #a69a5b;">8</div>
+      <div style="background: #3e8680;">9</div>
+    </div>
+    <div class="bar">bar</div>
+  </div>
+</body>
+
+</html>
