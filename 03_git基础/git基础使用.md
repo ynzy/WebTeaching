@@ -107,3 +107,4 @@ git checkout 切换分支
 
 这两个步骤练习下，我演示一遍，
 我建立自己的张勇分支
+git push --set-upstream origin zhangyong
