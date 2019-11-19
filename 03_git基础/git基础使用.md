@@ -79,4 +79,4 @@ git branch -d <demo:xulei>
 ```
 ## 删除远程分支
 ```shell
-git push origin --delete <demo:xulei>
+git push origin --delete <demo:xulei></demo:xulei>
