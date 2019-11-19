@@ -73,4 +73,10 @@ git checkout <demo:xulei>
 ```shell
 git push origin HEAD:<demo:xulei>
 ```
-
+## 删除本地分支
+```shell
+git branch -d <demo:xulei>
+```
+## 删除远程分支
+```shell
+git push origin --delete <demo:xulei>
