@@ -69,9 +69,8 @@ git checkout <demo:xulei>
 ```
 现在就是在远程的xulei分支上了，提交代码
 
-## 绑定本地分支到要提交到的远程分支
+## 绑定本地分支到要提交到的远程分支，远程分支是提交后生成的，无需在github创建
 ```shell
 git push origin HEAD:<demo:xulei>
 ```
-
 
