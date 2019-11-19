@@ -48,3 +48,30 @@ git pull
 git push
 ```
 
+## 拉取远程分支
+```shell
+git pull
+```
+## 查看所有分支
+```shell
+git branch -a
+```
+
+## git查看当前分支
+```shell
+git branch
+```
+绿色的是当前分支
+
+## 切换到指定分支
+```shell
+git checkout <分支名>
+```
+现在就是在远程的xulei分支上了，提交代码
+
+## 绑定本地分支到要提交到的远程分支
+```shell
+git push origin HEAD:<name-of-remote-branch>
+```
+
+
