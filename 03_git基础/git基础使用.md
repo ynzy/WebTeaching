@@ -96,7 +96,7 @@ git checkout 切换分支
 ## 方式1
 1. 查看本地分支git branch
 2. 建立本地分支git checkout -b <本地分支名>
-3. 将本地分支推送到远程仓库(提交代码直接推送)
+3. 将本地分支推送到远程仓库(提交代码直接推送)git push origin HEAD:<name-of-remote-branch>
 4. 到github上查看自己建立的分支
 
 ## 方式2
