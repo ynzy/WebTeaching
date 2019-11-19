@@ -108,3 +108,10 @@ git checkout 切换分支
 这两个步骤练习下，我演示一遍，
 我建立自己的张勇分支
 git push --set-upstream origin zhangyong
+
+## 删除分支
+git branch -d zhangyong
+
+就这些，刚才卡在删除分支这了，弄完方式1，方式2要先切换分支，删除本地你要删除的分支，然后在弄方式2
+一般不会随便删分支的
+你练一下吧
