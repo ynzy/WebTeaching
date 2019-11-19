@@ -15,25 +15,36 @@
         /* 单独设置子容器如何沿交叉轴排列：align-self */
         .warper {
             display: flex;
-            align-items:flex-end;
+            /* align-items:flex-end; */
+            flex-direction:column;
             width: 800px;
             height: 400px;
             background: pink;
         }
         .sone_first {
-            align-self: baseline;
-            /* width: 50px; */
+            /* align-self: baseline; */
+            flex-basis: 120px;
+            width: 120px;
+            height:80px;
             background: red;
         }
         .sone_second {
-            align-self: flex-start;
-            /* width: 50px; */
+            flex-basis: 120px;
+            width: 120px;
+            height:80px;
             background: green;
         }
         .sone_three {
-            align-self: stretch;
-            /* width: 50px; */
+            /* flex-basis: 120px; */
+            /* width: 120px;
+            height:80px; */
             background: orange;
+        }
+        .sone_four {
+            /* flex-basis: 120px; */
+            /* width: 120px;
+            height:80px; */
+            background: yellowgreen;
         }
     
     </style>
@@ -42,9 +53,10 @@
 <body>
     <!-- 设置子容器如何沿交叉轴排列：align-self -->
     <div class="warper">
-        <div class="sone_first">111112222</div>
+        <div class="sone_first">1</div>
         <div class="sone_second">221</div>
         <div class="sone_three">322222</div>
+        <div class="sone_four">322222</div>
     </div>
 </body>
 
