@@ -142,11 +142,74 @@ b.abc{
     color: red;
 } */
 /* 4、选择唯一一个子元素 */
-ul > li:only-child {
+/* ul > li:only-child {
     color:red;
+} */
+
+/* 5、选择只有一个指定类型的子元素的那个子元素   注意*/
+/* div > p:only-of-type{
+    color: red;
+} */
+
+/* 选择子元素的第二个元素  有疑问 */
+/* ul > li:nth-child(2){
+    color: red;
+} */
+
+/* 选择子元素的倒数第二个元素 */
+/* ul > li:nth-last-child(2){
+    color:red;
+} */
+/* 选择特定子元素的第二个子元素 */
+/* div > p:nth-of-type(2){
+    color: red;
+} */
+
+/* 选择指定类型的倒数第二个子元素 */
+/* div > p:nth-last-of-type(1){
+    color: red;
+} */
+
+/* 二、ui伪类选择器：根据元素的状态匹配元素 */
+/* 选择启用状态的元素 */
+/* input:enabled {
+    border:1px solid red;
 }
 
-/* 5、选择只有一个指定类型的子元素 */
+input:disabled {
+    border:1px solid springgreen;
+} */
+
+/* 是否勾选input元素 复选框*/
+/* input:checked {
+    display:none;
+} */
+
+/* 从一组元素中选择默认状态 */
+/* input:default{
+    display: none;
+} */
+
+/* 验证合法的时候显示 */
+/* input:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid red;
+} */
+
+/* 必填 */
+input:required {
+    border: 1px solid red;
+}
+/* 不必填 */
+input:optional {
+    border: 1px solid green;
+}
+
+/* 三、动态伪类选择器 */
+
 
 
 

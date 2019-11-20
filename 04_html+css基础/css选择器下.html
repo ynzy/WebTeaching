@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>css选择器下</title>
-  <link rel="stylesheet" type="text/css" href="style.css"
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <style>
 /* 文档内嵌样式 */
@@ -20,18 +20,43 @@
 <body>
 <ul>
   <li>我是儿子</li>
-  <li>我是儿子</li>
+  <li>我是儿子
+    <ol>
+      <li>我是孙子</li>
+      <li>我是孙子</li>
+    </ol>
+  </li>
   <li>我是儿子</li>
   <li>我是儿子</li>
 </ul>
 <ul>
   <li>我是唯一的儿子</li>
-  <!-- <li>我是唯一的儿子</li> -->
+  <li>我是唯一的儿子</li>
 </ul>
 
 <div>
-  <p></p>
+  <p>我是段落</p>
+  <span>我不是段落</span>
 </div>
+
+<div>
+  <p>我是段落</p>
+  <p>我是段落</p>
+</div>
+<form>
+   <input type="text" disabled> 
+   <input type="text">
+
+   <input type="checkbox">
+   <input type="checkbox" checked>
+
+   <!-- required:必填 -->
+   <input type="email" required>
+   <input type="text" >
+   <button>提交</button>
+
+
+</form>
 </body>
 
 
