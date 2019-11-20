@@ -1,7 +1,7 @@
 @charset "utf=8";
 @import "text.css";
 
-/* 通用选择器还匹配到了和body */
+/* 一、通用选择器还匹配到了和body */
 /* *{
     border:1px solid red;
 } */
@@ -31,7 +31,7 @@ b.abc{
     font-size: 30px;
 }
 
-/* 属性选择器 css2*/
+/* 二、属性选择器 css2*/
 /* [href]{
     color: slategrey;
 }  */
@@ -41,19 +41,95 @@ b.abc{
 } */
 
 /* 属性选择器 cs3*/
-/* 属性值开头匹配的属性选择器 */
-[href^="http"] {
+/* 属性值开头匹配的属性选择器 ^ */
+/* [href^="http"] {
     color: salmon;
-}
-/* 匹配到结尾 */
-[href$=".cn"]{
+} */
+/* 匹配到结尾  $ */
+/* [href$=".cn"]{
     color:royalblue
+} */
+
+/* 属性值包含指定字符的属性选择器(模糊查询用的少，效率低) *  */
+/* [href*="baidu"] {
+    font-size: 50px;;
+} */
+
+/* [class~="def"] {
+    color: royalblue;
+} */
+
+/* 属性值包含指定字符的属性选择器(精确查找)  | */
+/* [lang|="en"]{
+    color: salmon;
+} */
+
+/* 三、复合选择器 */
+/* 1、分组选择器 , */
+/* p,b,i,span {
+    color: salmon;
+} */
+
+/* 混合分组选择器  , */
+/* #abc,.abc,i,span {
+    color: red;
+} */
+
+/* 2、后代选择器,派生选择器，不在乎b的层次  空格 */
+/* p b {
+    color: salmon;
+} */
+
+/* ul li {
+    border:1px solid royalblue;
+} */
+
+/* 3、子选择器 在乎b的层次  >  */
+/* p > span > b {
+    color: seagreen;
+} */
+
+/* ul > li >  ol > li {
+    border: 1px solid darkcyan;
+} */
+
+/* 相邻兄弟选择器 匹配和第一个元素相邻的第二个元素 即b  + */
+/* p + b {
+    color: darkgoldenrod;
+} */
+
+/* 普通兄弟选择器 匹配到后面的所有元素 css3 */
+/* p ~ b {
+    font-size: 40px;
+} */
+
+/* 四、伪元素选择器 在css3中伪元素前面 :: 伪类前面 : */
+/* 1、块级首行选择器 ::first-line */
+::first-line {
+    color:red
 }
 
-/* 属性值包含的属性选择器(模糊查询) */
-[href*="baidu"]{
-    font-size: 50px;;
+/* 2、块级首行首个单词 ::first-letter ，span无效*/
+::first-letter {
+    font-size: 30px;
 }
+
+/* 3、文本前插入 ::brfore 配合content属性 */
+/* a::before {
+    content:'点击';
+} */
+
+/* 4、文本后插入 ::after 配合content 属性 */
+a::after {
+    content: '搜索';
+}
+
+
+
+
+
+
+
 
 
 
