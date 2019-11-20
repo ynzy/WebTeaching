@@ -1,7 +1,60 @@
 @charset "utf=8";
 @import "text.css";
-p{
-    color:green;
-    font-size:40px;
+
+/* 通用选择器还匹配到了和body */
+/* *{
+    border:1px solid red;
+} */
+
+/* p{
+    color: red;
+} */
+
+/* #abc{
+    color: rosybrown;
 }
- 
+
+.abc{
+    color: saddlebrown;
+}
+
+b.abc{
+    color: seagreen;
+
+} */
+
+/* .abc{
+    color: seagreen;
+}
+
+.def{
+    font-size: 30px;
+}
+
+/* 属性选择器 css2*/
+/* [href]{
+    color: slategrey;
+}  */
+
+/* [type="password"]{
+    border:1px solid royalblue;
+} */
+
+/* 属性选择器 cs3*/
+/* 属性值开头匹配的属性选择器 */
+[href^="http"] {
+    color: salmon;
+}
+/* 匹配到结尾 */
+[href$=".cn"]{
+    color:royalblue
+}
+
+/* 属性值包含的属性选择器(模糊查询) */
+[href*="baidu"]{
+    font-size: 50px;;
+}
+
+
+
+
