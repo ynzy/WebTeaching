@@ -200,15 +200,63 @@ input:invalid {
 } */
 
 /* 必填 */
-input:required {
+/* input:required {
     border: 1px solid red;
-}
+} */
 /* 不必填 */
-input:optional {
+/* input:optional {
     border: 1px solid green;
-}
+} */
 
-/* 三、动态伪类选择器 */
+/* 三、动态伪类选择器 对超链接 */
+/* 没访问过默认情况下 */
+a:link{
+    font-size: 30px;
+    color: red;
+}
+ /* 访问过 */
+ /* a:visited {
+     color:blue;
+ } */
+/* 鼠标放上去 悬停 访问过就失效 */
+/* a:hover {
+    color: orange;
+} */
+
+/* 鼠标点上去不松手 访问过就失效 */
+/* a:active {
+    color:green;
+} */
+/* 获得焦点(光标)时 对文本框 */
+/* input:focus {
+    border: 10px  solid  rosybrown;
+} */
+
+/* 四、其他伪类选择器 */
+/* 否定选择器 ，反选 */
+/* a:not([href*="baidu"]){
+    color:red;
+} */
+
+/* 匹配没有任何元素的内容 */
+/* p:empty {
+    display: ;
+} */
+
+/* p:lang(en-us){
+    color:red;
+} */
+
+/* 定位到锚点的时候，选择此元素 */
+/* b:target{
+    color: red;
+
+} */
+
+/* 伪元素选择器 ，当光标选择文字时触发 火狐不支持 */
+::selection{
+    color: red;
+}
 
 
 
