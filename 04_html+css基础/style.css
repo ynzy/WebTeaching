@@ -103,16 +103,16 @@ b.abc{
     font-size: 40px;
 } */
 
-/* 四、伪元素选择器 在css3中伪元素前面 :: 伪类前面 : */
+/* 四、伪元素选择器 在css3中伪元素前面 ::       伪类前面 : */
 /* 1、块级首行选择器 ::first-line */
-::first-line {
+/* ::first-line {
     color:red
-}
+} */
 
 /* 2、块级首行首个单词 ::first-letter ，span无效*/
-::first-letter {
+/* ::first-letter {
     font-size: 30px;
-}
+} */
 
 /* 3、文本前插入 ::brfore 配合content属性 */
 /* a::before {
@@ -120,9 +120,35 @@ b.abc{
 } */
 
 /* 4、文本后插入 ::after 配合content 属性 */
-a::after {
+/* a::after {
     content: '搜索';
+} */
+
+/* 伪类选择器 */
+/* 一、结构性伪类选择器：根据元素在文档中的位置选择元素，伪类都需要选择前置选择器来确实能够范围，前缀一般为: */
+/* 1、根元素选择器 */
+/* :root {
+    border:1px solid red;
+} */
+
+/* 2、第一个子元素选择器 */
+/* ul > li:first-child {
+    color: red;
+
+} */
+
+/* 3、最后一个子元素 */
+/* ul > li:last-child {
+    color: red;
+} */
+/* 4、选择唯一一个子元素 */
+ul > li:only-child {
+    color:red;
 }
+
+/* 5、选择只有一个指定类型的子元素 */
+
+
 
 
 
