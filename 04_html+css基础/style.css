@@ -210,12 +210,13 @@ input:invalid {
 
 /* 三、动态伪类选择器 对超链接 */
 /* 没访问过默认情况下 */
-a:link{
+a:link {
     font-size: 30px;
     color: red;
 }
- /* 访问过 */
- /* a:visited {
+
+/* 访问过 */
+/* a:visited {
      color:blue;
  } */
 /* 鼠标放上去 悬停 访问过就失效 */
@@ -254,20 +255,59 @@ a:link{
 } */
 
 /* 伪元素选择器 ，当光标选择文字时触发 火狐不支持 */
-::selection{
+/* ::selection{
     color: red;
+} */
+
+/* rgb(r,g,b) 十进制 */
+/* p{
+color:rgb(0,128,128);
+} */
+
+/* rgba(r,g,b,a)a 是透明度0~1之间 */
+/* p{
+    color:rgba(0,128,128,0.1);
+    font-size: 40px;
+    } */
+
+/* hsl 色相饱和度 */
+/* p{
+    color:hsl(120,100%,30%);
+    font-size: 40px;
+    } */
+/* hsla 色相饱和度透明度 */
+/* p{
+    color:hsla(120,100%,30%,0.1);
+    font-size: 40px;
+    } */
+
+/* 相对单位 */
+/* em    是字号的三倍  */
+/* body{
+    width: 200px;
+    font-size: 50px;;
+} */
+/* p {
+    color: hsl(120, 100%, 30%);
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    background: red;
+    height: 3em;
+    width: 50%;
+} */
+
+/* %  所在区块的宽度.父元素的宽度*/
+/* p {
+    color: hsl(120, 100%, 30%);
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    background: red;
+    width: 50%;
+    font-size: 200%;
+} */
+
+p {
+    font-size: xx-large;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
