@@ -308,6 +308,31 @@ color:rgb(0,128,128);
     font-size: 200%;
 } */
 
-p {
+/* 数字+px,可以精确的微调 */
+/* p {
+    font-size: 50px;
+} */
+
+/* 设置一个从小到大 */
+/* p {
     font-size: xx-large;
+} */
+
+/* 相对父元素字体的大小 smaller */
+body {
+    font-size: 50px;
+    font-variant: small-caps;
+}
+/* p {
+    font-size:smaller; 
+} */ 
+
+/* 将字体设置小型大写的html */
+/* p {
+    font-variant:small-caps;
+} */
+
+/* 将字体设置小型大写的html恢复成正常状态 */
+p {
+    font-variant:normal;
 }
