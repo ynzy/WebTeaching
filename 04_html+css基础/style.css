@@ -210,10 +210,10 @@ input:invalid {
 
 /* 三、动态伪类选择器 对超链接 */
 /* 没访问过默认情况下 */
-a:link {
+/* a:link {
     font-size: 30px;
     color: red;
-}
+} */
 
 /* 访问过 */
 /* a:visited {
@@ -319,13 +319,13 @@ color:rgb(0,128,128);
 } */
 
 /* 相对父元素字体的大小 smaller */
-body {
+/* body {
     font-size: 50px;
     font-variant: small-caps;
-}
+} */
 /* p {
     font-size:smaller; 
-} */ 
+} */
 
 /* 将字体设置小型大写的html */
 /* p {
@@ -333,6 +333,128 @@ body {
 } */
 
 /* 将字体设置小型大写的html恢复成正常状态 */
-p {
+/* p {
     font-variant:normal;
-}
+} */
+
+/* 字体倾斜 font-style:italic */
+/* p {
+    font-style: italic;
+} */
+
+/* font-weight 字体粗细 */
+
+/* font-family  做几个备用字体*/
+/* p {
+    font-family: 楷体,微软雅黑，宋体;
+} */
+
+/* 字体组合 是否倾斜，，是否加粗，是否转小型大写    */
+/* p {
+    font:  italic small-caps 50px 楷体 ;
+} */
+
+/* web字体 */
+/* @font-face {
+    font-family: 'abc';
+    src: url('AUSPROBE.TTF');
+
+} */
+/* 享受统一字体 */
+/* p{
+    font-size: 50px;
+    font-family: 'abc';
+} */
+
+/* font-size: 50px;
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+
+    /* 小写转化成大写 */
+    /* text-transform: capitalize; */
+    /* 大写转化成小写 */
+    /* text-transform: lowercase; */
+
+    /* 给文本添加阴影  x，y, 模糊值， 颜色*/
+    /* text-shadow: 5px 5px 10px red; */
+
+    /* 文本控制 */
+    /* text-align: left; */
+    /* text-align: center; */
+    /* text-align: right; */
+    /* 两端对齐 */
+    /* text-align: justify; */
+    /* text-align: start; */
+    /* text-align: end; */
+
+    /* 空白被压缩，不换行 */
+    /* white-space: nowrap; */
+    /* 空白不被压缩，不换行，遇到换行符换行 */
+    /* white-space:pre; */
+
+    /* 设置文本间距 */
+    /* word-spacing: 60px; */
+    /* 单个字之间的间距 */
+    /* letter-spacing: 60px; */
+
+    /* 行高 */
+    /* line-height: 1.5; */
+    /* line-height: 150%; */
+
+    /* 自动断行 */
+    /* word-wrap:break-word; */
+
+    /* 文本首航缩进 */
+    /* text-indent: 50px;
+
+    background: blue; */ 
+/* p {
+    
+} */
+
+/* a {
+    text-decoration: none;
+} */
+
+    /* ~~~~~~~~~~~~~~~~~~~~~盒子模型~~~~~~~两个width,以最下面的为主~~~~~~~~~~~~~~~~~~~ */
+    /* auto：浏览器自行处理溢出，如有，显示滚动条，没有，就不显示滚动条 */
+    /* hidden:溢出会自动裁掉 ，把溢出的元素裁掉*/
+    /* 不管是否有溢出都显示滚动框 scroll */
+    /* body {
+        width:600px;
+        border:1px solid  red;
+    }  */
+     /* div {
+        background: silver;
+        width:50px;
+        height: 50px;
+        width: 60%;
+        padding-top: 30px;
+        padding：10px;
+        overflow: auto;
+        overflow:hidden;
+        overflow:scroll;
+    } */
+
+    /* ····················css盒子模型下 */
+    /* visibility:hidden:隐藏，但是保留空间 */
+    /* visibility:collapse;隐藏表格，不保留空间 */
+    /* div {
+        background: silver;
+        width: 200px;
+        height: 200px;
+        visibility: hidden;
+        visibility:collapse;
+    }
+    table{
+        background: skyblue;
+    }
+
+    table tr:first-child {
+        visibility:hidden;
+        visibility: collapse;
+
+    } */
+
+
+
