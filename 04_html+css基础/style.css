@@ -595,20 +595,34 @@ color:rgb(0,128,128);
 
 /* 滚动  attachment 默认scroll是背景文字一起滚动的*/
 /* 内容滚动，背景不动 */
-body {
-    background-image: url(行内块元素.png);
+/* body {
+    
     background-attachment: fixed;
 
-}
+} */
 
+/* background-origin：border-box 图片会渗透 */
+/* background-origin:padding-box 默认样式，不会渗透到边框 */
+/* 设置背景的起始点 */
+/* background-clip:padding-box 会把渗透到边框上的图裁剪掉 */
+/* background-clip:content-box 会裁剪j */
 
-div {
-    width: 500px;
-    height: 500px;
-    background: cadetblue;
-    background-position: center;
+/* width: 500px;
+    height:500px; */
+/* background-image: url(行内块元素.png); */
+/* border: 10px dashed red;  */
+/* background-repeat: no-repeat; */
+/* padding: 50px;  */
+/* background-origin: border-box; */
+/* background-origin:padding-box; */
+/* background-origin:content-box; */
+/* background-position: center; */
 
-}
+/* background-clip: padding-box; */
+/* background-clip:content-box; */
+/* background: silver url(行内块元素.png) no-repeat top left / 100% border-box content-box ; */
+/* div {
+} */
 
 /* 子元素继承父元素的透明效果 */
 /* div b {
@@ -619,3 +633,66 @@ div {
     background-color: transparent;
     
 } */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~css表格与列表~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* 通用属性 */
+/* border-collapse:separate; 默认值，是单元格独立 */
+/* border-collapse:collapse 相邻单元格合并 */
+/* caption-side:bottom ie浏览器不适应 */
+/* :empty-cell:hide 就会隐藏 */
+/* table-layout:fixed 自动换行，auto 是默认值，不会自动拉伸 */
+/* border:1px solid red;外边框 */
+
+table {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+
+
+/* border-collapse: separate; */
+/* border-collapse: collapse; */
+/* border-spacing: 0px; */
+/* caption-side: bottom; */
+/* empty-cells: hide; */
+/* table-layout: fixed; */
+/* border:1px solid red; */
+/* table tr th, table tr td {
+    border:1px solid red;
+} */
+
+
+/* ~~~~~~~~~~~~~~~~~~列表~~~~~~~~~~~~~~~~~~~~ */
+/* list-style-position:inside 点已经成为了文字的一部分 */
+ul {
+    /* width:120px; */
+    /* list-style-type:square;
+    list-style-position: inside;
+    list-style-image:url(行内块元素.png); */
+    /* list-style: square inside url(行内块元素.png); */
+}
+.sex {
+    vertical-align: top;
+}
+b {
+    vertical-align: super;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background: silver;
+    text-align: center;
+}
+
+/* vertical-align: -200px;上下的偏移量要用负值 */
+div span {
+    background: chartreuse;
+    vertical-align: -50px;
+}
+
+
+em {
+vertical-align: 60px;
+}
