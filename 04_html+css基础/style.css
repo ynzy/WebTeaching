@@ -368,46 +368,46 @@ color:rgb(0,128,128);
 
 /* font-size: 50px;
     /* text-decoration: underline; */
-    /* text-decoration: overline; */
+/* text-decoration: overline; */
 
-    /* 小写转化成大写 */
-    /* text-transform: capitalize; */
-    /* 大写转化成小写 */
-    /* text-transform: lowercase; */
+/* 小写转化成大写 */
+/* text-transform: capitalize; */
+/* 大写转化成小写 */
+/* text-transform: lowercase; */
 
-    /* 给文本添加阴影  x，y, 模糊值， 颜色*/
-    /* text-shadow: 5px 5px 10px red; */
+/* 给文本添加阴影  x，y, 模糊值， 颜色*/
+/* text-shadow: 5px 5px 10px red; */
 
-    /* 文本控制 */
-    /* text-align: left; */
-    /* text-align: center; */
-    /* text-align: right; */
-    /* 两端对齐 */
-    /* text-align: justify; */
-    /* text-align: start; */
-    /* text-align: end; */
+/* 文本控制 */
+/* text-align: left; */
+/* text-align: center; */
+/* text-align: right; */
+/* 两端对齐 */
+/* text-align: justify; */
+/* text-align: start; */
+/* text-align: end; */
 
-    /* 空白被压缩，不换行 */
-    /* white-space: nowrap; */
-    /* 空白不被压缩，不换行，遇到换行符换行 */
-    /* white-space:pre; */
+/* 空白被压缩，不换行 */
+/* white-space: nowrap; */
+/* 空白不被压缩，不换行，遇到换行符换行 */
+/* white-space:pre; */
 
-    /* 设置文本间距 */
-    /* word-spacing: 60px; */
-    /* 单个字之间的间距 */
-    /* letter-spacing: 60px; */
+/* 设置文本间距 */
+/* word-spacing: 60px; */
+/* 单个字之间的间距 */
+/* letter-spacing: 60px; */
 
-    /* 行高 */
-    /* line-height: 1.5; */
-    /* line-height: 150%; */
+/* 行高 */
+/* line-height: 1.5; */
+/* line-height: 150%; */
 
-    /* 自动断行 */
-    /* word-wrap:break-word; */
+/* 自动断行 */
+/* word-wrap:break-word; */
 
-    /* 文本首航缩进 */
-    /* text-indent: 50px;
+/* 文本首航缩进 */
+/* text-indent: 50px;
 
-    background: blue; */ 
+    background: blue; */
 /* p {
     
 } */
@@ -416,15 +416,15 @@ color:rgb(0,128,128);
     text-decoration: none;
 } */
 
-    /* ~~~~~~~~~~~~~~~~~~~~~盒子模型~~~~~~~两个width,以最下面的为主~~~~~~~~~~~~~~~~~~~ */
-    /* auto：浏览器自行处理溢出，如有，显示滚动条，没有，就不显示滚动条 */
-    /* hidden:溢出会自动裁掉 ，把溢出的元素裁掉*/
-    /* 不管是否有溢出都显示滚动框 scroll */
-    /* body {
+/* ~~~~~~~~~~~~~~~~~~~~~盒子模型~~~~~~~两个width,以最下面的为主~~~~~~~~~~~~~~~~~~~ */
+/* auto：浏览器自行处理溢出，如有，显示滚动条，没有，就不显示滚动条 */
+/* hidden:溢出会自动裁掉 ，把溢出的元素裁掉*/
+/* 不管是否有溢出都显示滚动框 scroll */
+/* body {
         width:600px;
         border:1px solid  red;
     }  */
-     /* div {
+/* div {
         background: silver;
         width:50px;
         height: 50px;
@@ -436,10 +436,10 @@ color:rgb(0,128,128);
         overflow:scroll;
     } */
 
-    /* ····················css盒子模型下 */
-    /* visibility:hidden:隐藏，但是保留空间 */
-    /* visibility:collapse;隐藏表格，不保留空间 */
-    /* div {
+/* ····················css盒子模型下 */
+/* visibility:hidden:隐藏，但是保留空间 */
+/* visibility:collapse;隐藏表格，不保留空间 */
+/* div {
         background: silver;
         width: 200px;
         height: 200px;
@@ -457,4 +457,104 @@ color:rgb(0,128,128);
     } */
 
 
+/* 块级元素有宽高 */
+/* div {
+       width:200px;
+       height: 200px;
+       background:silver;
+
+    } */
+
+/* 行内元素没有宽高，宽高自适应，不能隔离其他行内元素 */
+/* span {
+        /* width:200px;
+        height: 200px;
+        background:silver; 
+    } */
+
+/* 行内块级元素：可以设置宽高有块元素的特征，文本没有隔离，有行内元素的特征 */
+/* img {
+        width:200px;
+        height: 200px;
+        background:silver; 
+    } */
+
+/* display:inline ;块级元素转化成行内元素，宽高失效，背景保留 */
+/* div {
+        width:200px;
+        height: 200px;
+        background:silver;
+        display: inline; 
+     } */
+
+/* display:block ;行内元素转化成块级元素 */
+/* span {
+    width: 200px;
+    height: 200px;
+    background:silver;
+    display: block;
+} */
+
+/* display:inline-block 转化为行内块元素(内联块) */
+/* div,span {
+    width: 200px;
+    height: 200px;
+    background: silver;
+    display: inline-block;
+} */
+
+/* display:none; 隐藏，不保留空间，其他内容占位 */
+/* span {
+    display: none;
+} */
+
+
+
+/* 元素的浮动 立体层次 */
+/* a:float:left  向上浮动，a的位置空出来，b和c就占了位置 */
+/* a:float:left, b:float:left 向上浮动，a和b到 了同一层，c就占了a的位置，文字没进去 */
+/* clear 清除浮动 clear:left 不受上一个元素左浮动干扰 */
+/* clear 清除浮动 clear:both 不受上一个元素任何浮动干扰 */
+/* div {
+    width: 200px;
+    height: 200px;
+} */
+/* #a {
+    float: left;
+    background: slateblue;
+}
+#b {
+    margin-left: 20px;
+    float:left;
+    background: rosybrown;
+} 
+ #c {
+    float: left;
+    background: springgreen;
+}
+#d {
+    height: 300px;
+    margin-left:20px;
+    background: orange; 
+    float:left;
+} */
+
+ /* #a {
+    float: right;
+    background: slateblue;
+  
+}
+#b {
+    margin-left: 20px;
+    background: rosybrown;
+    clear:both;
+}  */
+
+
+/* ~~~~~~~~~~~~~~~~~~css边框和背景~~~~~~~~~~~~~~~~~~ */
+div {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+}
 
