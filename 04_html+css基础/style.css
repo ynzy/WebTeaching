@@ -539,7 +539,7 @@ color:rgb(0,128,128);
     float:left;
 } */
 
- /* #a {
+/* #a {
     float: right;
     background: slateblue;
   
@@ -552,9 +552,70 @@ color:rgb(0,128,128);
 
 
 /* ~~~~~~~~~~~~~~~~~~css边框和背景~~~~~~~~~~~~~~~~~~ */
-div {
-    width: 200px;
-    height: 200px;
-    border-style: solid;
+/* thick:最粗 */
+/* border-style:none; 边框消失,空间保留 */
+/* border-style: none , solid dashed */
+/* 圆角边框 css3 border-radius  要先设置边框*/
+/* width: 200px;
+    height: 200px; */
+/* border-style: solid; */
+/* border-color:red; */
+/* border-width: thin; */
+/* border-width:thick; */
+/* border-width: 20px; */
+/* border-style:none; */
+/* border-style:dashed; */
+
+/* border: 20px solid red; */
+/* border-radius: 10px 30px 70px 50px; */
+/* border-top-right-radius:50px; */
+
+/* border-top: 10px solid red; */
+
+
+/* background-image 背景图片默认是平铺，当图片小，就会重复 */
+/* background-size: cover,放大 */
+/* background-size:contain,缩小 */
+/* div */
+/* width: 500px;*/
+/* height: 500px; */
+/* background-color: silver; */
+/* background-image: url(行内块元素.png); */
+/* background-repeat: no-repeat; */
+/* background-position: right bottom; */
+/* background-size: cover;  */
+/* background-size:contain; */
+
+/* body */
+/* background-repeat: repeat-y; */
+/* background-repeat: no-repeat; */
+/* background-position: right; */
+/* background-size: 100%; */
+/* background-size:200px 300px; */
+
+/* 滚动  attachment 默认scroll是背景文字一起滚动的*/
+/* 内容滚动，背景不动 */
+body {
+    background-image: url(行内块元素.png);
+    background-attachment: fixed;
+
 }
 
+
+div {
+    width: 500px;
+    height: 500px;
+    background: cadetblue;
+    background-position: center;
+
+}
+
+/* 子元素继承父元素的透明效果 */
+/* div b {
+    background: skyblue;
+} */
+
+/* div b:first-child {
+    background-color: transparent;
+    
+} */
