@@ -672,7 +672,7 @@ ul {
     list-style-image:url(行内块元素.png); */
     /* list-style: square inside url(行内块元素.png); */
 }
-.sex {
+/* .sex {
     vertical-align: top;
 }
 b {
@@ -684,15 +684,29 @@ div {
     height: 200px;
     background: silver;
     text-align: center;
-}
+} */
 
 /* vertical-align: -200px;上下的偏移量要用负值 */
-div span {
+/* div span {
     background: chartreuse;
     vertical-align: -50px;
-}
+} */
 
 
-em {
+/* em {
 vertical-align: 60px;
-}
+} */
+
+
+/* ~~~~~~~~~~~~~~~css其他样式~~~~~~~~~~~~~~~~ */
+/* box-shadow: 正值表示向右 */
+ div {
+     /* width: 200px;
+     height: 200px; */
+     /* background-color: cornflowerblue;
+     color:red;
+     opacity:0.5; */
+
+     /* border:10px solid green;
+     box-shadow: 15px 14px 10px 10px grey;
+ } */

@@ -1,0 +1,26 @@
+@charset "utf=8";
+/*~~~~~~~~~~~~~~~~~ css前缀~~~~~~~~~~~~~~~~ */
+/* 前缀写在前面，标准写法写在后面 优雅降级 渐进增强 */
+/* -webkit-border-radius:50px; 为兼容早期的谷歌 */
+/* -moz-border-radius:50px; 为兼容早期的火狐，现在已经剔除了前缀的写法 */
+/* border-radius: 标准化 */
+/* div {
+    width: 200px;
+    height: 200px;
+    background-color: silver;
+     
+    
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius: 50%;
+    
+} */
+
+/* 网页的默认字号是16px */
+html {
+    font-size: 62.5%px;
+}
+
+h1{
+    font-size: 3em;
+}
