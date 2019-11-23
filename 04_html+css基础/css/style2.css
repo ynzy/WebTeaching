@@ -1,0 +1,103 @@
+@charset "utf=8";
+
+/* ~~~~~~~~~~~传统布局1、表格布局 ~~~~~~~~~~~~*/
+/* body{
+    margin: 0;
+}
+
+table {
+    width: 960px;
+    margin: 0 auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+.header {
+    height:120px;
+    background-color:olive;
+}
+.aside {
+    width: 200px;
+    height: 500px;
+    background-color: purple;
+}
+.section {
+    width: 760px;
+    background-color: maroon;
+}
+.footer {
+    height:120px;
+    background-color: grey;
+} */
+
+/*~~~~~~~~~ 传统布局2、浮动布局，流体布局~~~~~~ */
+/* 
+body {
+    margin: 0 auto;
+    border: 1px solid red;
+    width: 960px;
+} */
+/* header {
+    width:960px;
+    height: 120px;
+    background-color: olive;
+    margin: 0 auto;
+} */
+/* aside {
+    width: 200px;
+    width:20%;
+    min-width: 120px;
+    height: 500px;
+    background-color: purple;
+    float: left;
+}
+section {
+    width: 760px;
+    height: 500px;
+    background-color: maroon;
+    float: right;
+}
+footer {
+    height: 120px;
+    background-color: grey;
+    clear: both;
+} */
+
+/*~~~~~~~~~ 传统布局3、流体布局~~~~~~ */
+body {
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    /* 浮动布局 */
+    /* width: 960px; */
+    /* 改成流体布局 */
+    width:auto;
+}
+header {
+    /* width:960px; */
+    height: 120px;
+    background-color: olive;
+    /* margin: 0 auto; */
+}
+aside {
+    /* 浮动布局 */
+    /* width: 200px; */
+    /* 流体布局 */
+    width:20%;
+    /* min-width: 120px; */
+    height: 500px;
+    background-color: purple;
+    float: left;
+}
+section {
+    /* 浮动布局 */
+    /* width: 760px; */
+    /* 流体布局 */
+    width: 80%;
+    height: 500px;
+    background-color: maroon;
+    float: right;
+}
+footer {
+    height: 120px;
+    background-color: grey;
+    clear: both;
+}
