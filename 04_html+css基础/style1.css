@@ -16,11 +16,54 @@
     
 } */
 
-/* 网页的默认字号是16px */
-html {
+/* 网页的默认字号是16px 设置网页基准设置为10px */
+/* 3em 是62.5%的三倍 */
+/* 固定布局 用px */
+/* em 会更加灵活，只需修改挂钩字体就行 */
+/* h1有内定大小，p没有内定大小 */
+
+/* 改变默认字号大小 html {font-size：10px;}等同于 62.5% */
+/* 1.1em 是15px 因为em和父元素挂钩，是14px的1.1倍 */
+/* html {
     font-size: 62.5%px;
 }
 
 h1{
-    font-size: 3em;
+    font-size:3em;
+}
+
+p{
+    font-size:1.4em;
+} */
+
+/* code  {
+    font-size: 0.768em;
+} */
+
+
+/* 直接和根挂钩 根元素是10px 62.5% */
+/* 和根挂钩的1.1倍，根元素是10px,就是11px */
+/* ie不支持rem */
+/* code {
+    font-size: 1.1rem;
+} */
+
+/* ~~~~~~~~~~~~~~~~~~~css3文本样式~~~~~~~~~~~~~~~~~~~ */
+/* ie9不支持 */
+/* 正值阴影 text-shadow: 1px 1px 1px red; */
+/* 负值阴影 text-shadow: -1px -1px 1px red; */
+/* white-space:nowrap 不换行   overflow:hidden 控制溢出 前提下才能裁剪文本 */
+/* text-overflow:ellipsis 多出来的省略 */
+P {
+    font-size: 50px;
+    /* text-shadow: 1px 1px 1px red; */
+    /* text-shadow: -1px -1px 1px red; */
+    width: 160px;
+   background-color: silver; 
+   white-space:nowrap;
+   overflow: hidden;
+   /* text-overflow: clip; */
+   text-overflow: ellipsis;
+   -o-text-overflow:ellipsis;
+ 
 }
