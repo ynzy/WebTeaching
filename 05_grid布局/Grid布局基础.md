@@ -103,6 +103,20 @@
 
   如果没有指定grid-row-gap，则会被设置为grid-column-gap相同的值。
 ### 4. items
+#### justify-items
+* 沿着行轴对齐网格的内容
+* 属性值
+  * start: 内容与网格区域的左端对齐
+  * end: 内容与网格区域的右端对齐
+  * center: 内容位于网格区域的中间位置
+  * stretch: 内容宽度占据整个网格区域空间(这是默认值)
+#### align-items
+* 沿着列轴对齐网格内的内容
+* 属性值
+  * start: 内容与网格区域的左端对齐
+  * end: 内容与网格区域的右端对齐
+  * center: 内容位于网格区域的中间位置
+  * stretch: 内容宽度占据整个网格区域空间(这是默认值)
 
 ### 5. content
 ### 6. grid-auto
