@@ -90,7 +90,20 @@
   * subgrid：把grid-template-rows和grid-template-columns设置为subgrid，并且grid-template-areas设置为初始值
   * grid-template-rows/grid-template-columns：把grid-template-columns和grid-template-rows设置为指定值，与此同时，设置grid-template-areas为none
 ### 3. gap
+#### 网格轨道间距
+* `grid-column-gap/grid-row-gap`
+  * 指定网格线的大小，可以想象为设置列/行之间的间距的宽度
+* 属性值
+  * line-size: 一个长度值
+#### gap简写
+* grid-gap
+  * grid-row-gap和grid-column-gap的缩写。
+说明： 
+  起初使用grid-gap属性来定义的，目前逐渐被gap替代。
+
+  如果没有指定grid-row-gap，则会被设置为grid-column-gap相同的值。
 ### 4. items
+
 ### 5. content
 ### 6. grid-auto
 ### 7. grid
