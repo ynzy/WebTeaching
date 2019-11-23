@@ -357,7 +357,7 @@ color:rgb(0,128,128);
 /* web字体 */
 /* @font-face {
     font-family: 'abc';
-    src: url('AUSPROBE.TTF');
+    src: url('../font/AUSPROBE.TTF');
 
 } */
 /* 享受统一字体 */
@@ -580,7 +580,7 @@ color:rgb(0,128,128);
 /* width: 500px;*/
 /* height: 500px; */
 /* background-color: silver; */
-/* background-image: url(行内块元素.png); */
+/* background-image: url(../img/行内块元素.png); */
 /* background-repeat: no-repeat; */
 /* background-position: right bottom; */
 /* background-size: cover;  */
@@ -609,7 +609,7 @@ color:rgb(0,128,128);
 
 /* width: 500px;
     height:500px; */
-/* background-image: url(行内块元素.png); */
+/* background-image: url(../image/行内块元素.png); */
 /* border: 10px dashed red;  */
 /* background-repeat: no-repeat; */
 /* padding: 50px;  */
@@ -620,7 +620,7 @@ color:rgb(0,128,128);
 
 /* background-clip: padding-box; */
 /* background-clip:content-box; */
-/* background: silver url(行内块元素.png) no-repeat top left / 100% border-box content-box ; */
+/* background: silver url(../image/行内块元素.png) no-repeat top left / 100% border-box content-box ; */
 /* div {
 } */
 
@@ -669,8 +669,8 @@ ul {
     /* width:120px; */
     /* list-style-type:square;
     list-style-position: inside;
-    list-style-image:url(行内块元素.png); */
-    /* list-style: square inside url(行内块元素.png); */
+    list-style-image:url(../image/行内块元素.png); */
+    /* list-style: square inside url(../image/行内块元素.png); */
 }
 /* .sex {
     vertical-align: top;
