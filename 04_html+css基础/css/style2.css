@@ -29,7 +29,7 @@ table {
     background-color: grey;
 } */
 
-/*~~~~~~~~~ 传统布局2、浮动布局，流体布局~~~~~~ */
+/*~~~~~~~~~ 传统布局2、浮动布局~~~~~~ */
 /* 
 body {
     margin: 0 auto;
@@ -101,3 +101,64 @@ footer {
     background-color: grey;
     clear: both;
 }
+
+/* 定位布局 */
+/* body {
+    margin: 100px;
+    height: 800px;
+    border: 1px solid red;
+}
+header {
+    width: 100px;
+    height: 100px;
+    background-color: silver;
+} */
+
+/* 绝对定位 脱离文档流，以窗口文档左上角0，0为起点，本省这个文员在文档流是 占据位置的，
+如果脱离了，就不占用文档的位置，好像浮在空中一样，有了层次感。
+由于绝对定位脱离了文档流，就出现层次的概念，那么每个元素到底在哪一层，会不会冲突，覆盖，就需要通过
+z-index属性来判断他们的层次关系 */
+
+/* position:fixed以窗口为定位 */
+
+/* position:relative 不脱离文档流，占位偏移。 以自己原始的起始点来相对偏移 */
+ /* 子元素以body做绝对定位 在body父元素设置一个不需要top和left定位的相对定位，这个叫做设置参参考点*/
+
+body {
+    margin: 100px;
+    height:4000px;
+    border: 1px solid red;
+    position: relative;
+}
+header {
+    width: 100px;
+    height: 100px;
+    background-color: silver;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; */
+
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+
+    /* position: relative;
+    top: 10px;
+    left: 10px; */
+
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+/* aside {
+    width: 100px;
+    height: 100px;
+    background-color: springgreen;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index:0;
+} */
+
+

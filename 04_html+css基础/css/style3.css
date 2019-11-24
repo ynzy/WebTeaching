@@ -1,0 +1,85 @@
+@charset "utf=8";
+
+/* 布局操作 */
+  /* section中，left:200px;相同如下  right: 0; */
+
+/* header,aside 和footer 可以不设置定位，只需要设置section的绝对定位即可 */
+
+/* body {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+header {
+    width:960px;
+    height: 120px;
+    background-color:olive;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+aside {
+    width: 200px;
+    height: 500px;
+    background-color: purple;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+section {
+    width:760px;
+    height: 500px;
+    background-color: maroon;
+    position: absolute;
+    top:120px;
+    left:200px;
+   
+}
+footer {
+    width: 960px;
+    height: 120px;
+    background-color: gray;
+    position: absolute;
+    top:620px;
+    left:0;
+} */
+
+/* 流体布局 */
+/* body {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+header {
+    width:100%;
+    height: 120px;
+    background-color:olive;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+aside {
+    width: 20%;
+    height: 500px;
+    background-color: purple;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+section {
+    width:80%;
+    height: 500px;
+    background-color: maroon;
+    position: absolute;
+    top:120px;
+    left:20%;
+   
+}
+footer {
+    width: 100%;
+    height: 120px;
+    background-color: gray;
+    position: absolute;
+    top:620px;
+    left:0;
+} */
