@@ -1,11 +1,18 @@
 @charset "utf=8";
-/* css3弹性伸缩布局 */
+
+
+/* 早期css3弹性伸缩布局的旧方法 */
+
 /* ie不支持，其他都要带前缀 */
 /* display: -webkit-box;webkit 浏览器 */
 /* -moz-box-orient:vercial:垂直排列 */
 /* -moz-box-direction: reverse; 反向排列 */
 /* -moz-box-pack:end; 以结束点排列，必须根据外部容器的大小来排列 ，box必须设置100%*/
 /* -webkit-box-pack: justify;等分 */
+/* -webkit-box-align 对齐方式 */
+/* -webkit-box-flex: 3;就是60%  是流体的*/
+/* -webkit-box-ordinal-group: 2; 第一个位置设置为第2个,后面的每个顺序都要设置 */
+
 
 p {
     width: 150px;
@@ -16,7 +23,7 @@ p {
 }
 div {
     width: 100%;
-    background-color: tomato;
+    /* background-color: tomato; */
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -26,8 +33,33 @@ div {
     /* -moz-box-direction: reverse;
     -webkit-box-direction: reverse; */
 
-    -moz-box-pack:end;
+    /* -moz-box-pack:end;
     -webkit-box-pack: end;
     -webkit-box-pack: justify;
-    -webkit-box-pack: center;
+    -webkit-box-pack: center; */
+
+    /* -moz-box-align: start;
+    -webkit-box-align: start;
+    -webkit-box-align: end;
+    -webkit-box-align: baseline;
+    -webkit-box-align: stretch;
+    -webkit-box-align: inherit;
+    -webkit-box-align: initial;
+    -webkit-box-align: center; */
+}
+
+p:nth-child(1){
+    background-color: khaki;
+    -webkit-box-flex: 1;
+    -webkit-box-ordinal-group: 2;
+}
+p:nth-child(2){
+    background-color: khaki;
+    -webkit-box-flex: 3;
+    -webkit-box-ordinal-group: 1;
+}
+p:nth-child(3){
+    background-color: khaki;
+    -webkit-box-flex: 1;
+    -webkit-box-ordinal-group: 3;
 }
