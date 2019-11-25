@@ -1,0 +1,33 @@
+@charset "utf=8";
+/* css3弹性伸缩布局 */
+/* ie不支持，其他都要带前缀 */
+/* display: -webkit-box;webkit 浏览器 */
+/* -moz-box-orient:vercial:垂直排列 */
+/* -moz-box-direction: reverse; 反向排列 */
+/* -moz-box-pack:end; 以结束点排列，必须根据外部容器的大小来排列 ，box必须设置100%*/
+/* -webkit-box-pack: justify;等分 */
+
+p {
+    width: 150px;
+    border: 1px solid gray;
+    background-color: silver;
+    margin: 10px;
+    padding: 10px;
+}
+div {
+    width: 100%;
+    background-color: tomato;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+
+    
+    /* -moz-box-orient:vertical; */
+    /* -moz-box-direction: reverse;
+    -webkit-box-direction: reverse; */
+
+    -moz-box-pack:end;
+    -webkit-box-pack: end;
+    -webkit-box-pack: justify;
+    -webkit-box-pack: center;
+}
