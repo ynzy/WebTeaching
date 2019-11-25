@@ -1,0 +1,72 @@
+@charset "utf=8";
+
+
+/* css3弹性伸缩布局的新方法 */
+
+/* ie10支持，不一定需要加前缀 */
+/* -ms-flex-direction: column; 上上到下 */
+/* -ms-flex-direction: column; 从下到上 */
+/* -ms-flex-direction:row 从左到右 */
+/* -ms-flex-wrap: wrap; 如果无法容纳就自动换行 默认不换行 */
+/* -ms-flex-wrap: wrap-reverse; 如果无法容纳就自动换行 ，换行之后排列顺序会倒序 */
+/* -ms-flex-flow:  row wrap; 是direction 和wrap 的集合方式 */
+/* -ms-flex-pack:整体对齐方式 */
+/* -ms-flex-align: 清除他的额外空间 */
+
+/* justify-content:space-around 分一半 */
+/* justify-content：space-betwwen 平均分布 */
+
+/* align-items: center;去除上下的额外空间 */
+/* slign-items:center 单独清除一个上下的空间 */
+
+
+
+p {
+    width: 150px;
+    border: 1px solid gray;
+    background-color: silver;
+    margin: 10px;
+    padding: 10px;
+}
+
+div {
+    width: 100%;
+    background-color: tomato;
+    /* display: -webkit-box;
+    display: -moz-box; */
+    /* display: -ms-flexbox; */
+    display: flex;
+    /* flex-direction:column; */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    /* flex-flow:row wrap; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+
+
+   
+}
+
+p:nth-child(1) {
+    background-color: khaki;
+    flex:1;
+    order: 3;
+  
+}
+
+p:nth-child(2) {
+    background-color: khaki;
+    /* align-self: center; */
+    flex: 3;
+    order: 2;
+
+}
+
+p:nth-child(3) {
+    background-color: khaki;
+    flex: 1;
+    order: 1;
+   
+}
