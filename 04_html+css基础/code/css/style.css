@@ -7,6 +7,9 @@ body,h1,ul {
 ul {
     list-style:outside none none;
 }
+a {
+    text-decoration:none;
+}
 #nav {
     background-color: #333;
     width: 100%;
@@ -27,6 +30,7 @@ ul {
 }
 #nav > section > ul {
     /* background-color: red; */
+    width:650px;
     line-height: 70px;
     float: right;
     color: silver;
@@ -39,3 +43,22 @@ ul {
     float: left;
     text-align: center;
 }
+/* ul > li:nth-child(1){
+    background-color: slateblue;
+} */
+
+#nav > section > ul > li > a {
+    display: block;
+    color: #ccc;
+}
+#nav > section > ul > li > a:hover,#nav > section > ul > li.active > a {
+    
+    color: #eee;
+    background-color: black;
+}
+
+/* 样式相同，可以用,集合到上个css中 */
+/* #nav > section > ul > li.active a {
+    color: #eee;
+    background-color: black;
+} */
