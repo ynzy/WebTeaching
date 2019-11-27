@@ -192,3 +192,35 @@
 ### 5.3 minmax()
 * 长度范围
   * 定义了一个长度范围的闭区间
+## 6.网格项上的属性
+### 6.1 start/end
+* `grid-column-start/grid-column-end/grid-row-start/grid-row-end`
+  * 使用特定的网格线确定grid item在网格中的位置
+* 属性值
+  * `<line>`: 可以是一个数字来指代相应编号的网格线,也可以使用名称指代相应命名的网格线.
+  * `span<number>`: 网格项将跨越指定数量的网格轨道
+  * `span<name>`: 网格项将跨越一些轨道,直到碰到指定命名的网格线
+  * `auto`: 自动布局,或者自动跨越,或者跨越一个默认的轨道
+* 说明
+  * 如果没有声明grid-column-end/grid-row-end,默认情况下,该网格项将跨越一个轨道.
+  * 网格项可以相互重叠,可以使用z-index来控制它们的堆叠顺序.
+### 6.2 start/end简写
+* `grid-column/grid-row`
+  *  `grid-column-start/grid-column-end/grid-row-start/grid-row-end`的简写形式
+* 属性值
+  * `<start-line> / <end-line>`: 每个值的用法都和属性分开写时的用法一样.
+
+### 6.3 grid-area
+* 网格区域
+  * 给grid item进行命名以便于使用grid-template-areas属性创建模板时来进行引用.
+* 属性值
+  * `<name>`: grid-template-areas中定义的命名
+  * `<row-start>/<column-start>/<row-end>/<column-end>`: 可以是数字,也可以是网格线的名字
+### 6.4 self
+#### justify-self
+* 沿着行轴对齐grid item里的内容
+* 属性值:
+  * start: 将内容对齐到网格区域的左端
+  * end: 将内容对齐到网格区域的右端
+  * center: 将内容对齐到网格区域的中间
+  * stretch: 填充网格区域的宽度(这是默认值)
