@@ -168,5 +168,27 @@
   * `<grid-auto-flow>[<grid-auto-rows>[/<grid-auto-columns>]]`: 接受所有与`grid-auto-flow`,`grid-auto-rows`和`grid-auto-columns`相同的值。如果省略`grid-auto-columns`,则将其设置为`grid-auto-rows`指定的值.如果两个都被省略,则它们被设置为它们的初始值.
 ## 5. css函数
 ### 5.1 repeat()
+* 重复:
+  * 跟踪列表的重复片段,允许大量显示重复模式的列或行以更紧凑的形式编写。
+* 可用范围：
+  * 这个函数可以用在CSS Grid属性geid-template-columns和grid0template-rows。
+* 重复次数
+  * `<number>`: 整数,确定确切的重复次数.
+  * `<auto-fill>`: 以网格项为准自动填充.
+  * `auto-fill`: 以网格容器为准自动填充.
+* 值:
+  * `<length>`: 非负长度.
+  * `<percentage>`: 相对于轨道中网格容器的内联大小的非负百分比,以及轨道中网格容器的块长宽.
+  * `<flex>`: 单位为fr的非负维度,指定轨道弹性布局的系数值.
+  * `max-content`: 表示网格的轨道长度自适应内容最大的那个单元格.
+  * `min-content`: 表示网格的轨道长度自适应内容最小的那个单元格.
+  * `auto`: 作为最大值时,等价于max-content.作为最小值时,它表示轨道中单元格最小长宽(由min-width/min-height)的最大值.
 ### 5.2 fit-comtent()
+* 内容适配
+  * 根据公式min(最大大小,最大值(最小大小,参数))将给定大小夹紧为可用大小.
+* 值
+  * `<length>`: 一个绝对的长度
+  * `<percentage>`: 相对于给定轴上可用空间的百分比。
 ### 5.3 minmax()
+* 长度范围
+  * 定义了一个长度范围的闭区间
