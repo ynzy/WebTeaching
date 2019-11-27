@@ -1,64 +1,120 @@
 @charset "utf-8";
 
-body,h1,ul {
+body,
+h1,
+ul {
     margin: 0;
     padding: 0;
 }
+
 ul {
-    list-style:outside none none;
+    list-style: outside none none;
 }
+
 a {
-    text-decoration:none;
+    text-decoration: none;
 }
+
 #nav {
     background-color: #333;
     width: 100%;
     height: 70px;
 }
-#nav > section {
+
+/* 为了不是css过于复杂，需要增加clss 来简化选择器长度 */
+/* #nav>section {
     width: 1263px;
     height: 70px;
-    /* background-color: cadetblue; */
+
     margin: 0 auto;
 }
-#nav > section > h1 {
+
+#nav>section>h1 {
     width: 200px;
     height: 70px;
     background-image: url(../img/logo.png);
     text-indent: -9999px;
     float: left;
 }
-#nav > section > ul {
-    /* background-color: red; */
-    width:650px;
+
+#nav>section>ul {
+
+    width: 650px;
     line-height: 70px;
     float: right;
     color: silver;
 
 }
-#nav > section > ul > li {
-    /* background-color: salmon; */
+
+#nav>section>ul>li {
+
     width: 120px;
-    /* color: sienna; */
+
     float: left;
     text-align: center;
 }
-/* ul > li:nth-child(1){
-    background-color: slateblue;
-} */
 
-#nav > section > ul > li > a {
+
+#nav>section>ul>li>a {
     display: block;
     color: #ccc;
 }
-#nav > section > ul > li > a:hover,#nav > section > ul > li.active > a {
-    
+
+#nav>section>ul>li>a:hover,
+#nav>section>ul>li.active>a {
+
     color: #eee;
     background-color: black;
-}
+} */
 
 /* 样式相同，可以用,集合到上个css中 */
 /* #nav > section > ul > li.active a {
     color: #eee;
     background-color: black;
 } */
+
+/* 为了不是css过于复杂，需要增加clss 来简化选择器长度 */
+#nav .center {
+    width: 1263px;
+    height: 70px;
+
+    margin: 0 auto;
+}
+
+#nav .logo {
+    width: 200px;
+    height: 70px;
+    background-image: url(../img/logo.png);
+    text-indent: -9999px;
+    float: left;
+}
+
+#nav .link {
+
+    width: 650px;
+    line-height: 70px;
+    float: right;
+    color: silver;
+
+}
+
+#nav .link li {
+
+    width: 120px;
+
+    float: left;
+    text-align: center;
+}
+
+
+#nav .link a {
+    display: block;
+    color: #ccc;
+}
+
+#nav .link a:hover,
+#nav .active a {
+
+    color: #eee;
+    background-color: black;
+}

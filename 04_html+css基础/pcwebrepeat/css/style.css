@@ -2,24 +2,27 @@
 body,ul,h1 {
     margin: 0;
 }
+a {
+    text-decoration: none;
+}
 #nav {
     background-color: #333;
     height: 70px;
 }
-#nav > section {
+#nav .nav-center{
     width: 1628px;
     height: 70px;
     margin: 0 auto;
     /* background-color: burlywood; */
 }
-#nav > section > h1 {
+#nav .nav-logo {
     width:240px;
     height:70px;
     background-image: url(../img/logo.png);
     text-indent: -9999px;
     float: left;
 }
-#nav > section > ul {
+#nav .nav-link{
     /* height:70px; */
     line-height: 70px;
     list-style: outside none none;
@@ -27,12 +30,26 @@ body,ul,h1 {
     color: silver;
     float: right;
 }
-#nav > section > ul > li {
+#nav .nav-link li {
     float: left;
     width:120px;
     height: 70px;
-    color: silver;
+    color: red;
     text-align: center;
     /* background-color: #000; */
 }
-#nav > section > ul > li:
+/* 如果不给a转成块元素，a就没法扩大。 */
+#nav .nav-link a {
+    color: #ccc;
+    /* background-color:lightcoral ; */
+    display: block;
+}
+#nav .nav-link a:hover {
+    color: #ccc;
+    background-color: #000;
+
+}
+#nav .active a {
+    color: #ccc;
+    background-color: #000;
+}
