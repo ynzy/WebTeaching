@@ -1,62 +1,80 @@
 @charset 'utf-8';
-body,ul,h1 {
+
+body,
+ul,
+h1 {
     margin: 0;
+    padding: 0;
 }
+
 ul {
     list-style: outside none none;
 }
+
 a {
     text-decoration: none;
 }
+
 #header {
     background-color: #333;
     height: 70px;
     width: 100%;
-    min-width:1268px;
+    min-width: 1268px;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 9999;
 }
-#header .center{
+
+#header .center {
     width: 1628px;
     height: 70px;
     margin: 0 auto;
     /* background-color: burlywood; */
 }
+
 #header .logo {
-    width:240px;
-    height:70px;
+    width: 240px;
+    height: 70px;
     background-image: url(../img/logo.png);
     text-indent: -9999px;
     float: left;
 }
-#header .link{
+
+#header .link {
     /* height:70px; */
     line-height: 70px;
-  
+
     /* background-color: skyblue; */
     color: silver;
     float: right;
 }
+
 #header .none {
     display: none;
 }
+
 #header .link li {
     float: left;
-    width:120px;
+    width: 120px;
     height: 70px;
     /* color: green; */
     text-align: center;
     /* background-color: red; */
 }
+
 /* 如果不给a转成块元素，a就没法扩大。 */
 #header .link a {
     color: #ccc;
     /* background-color:lightcoral ; */
     display: block;
 }
+
 #header .link a:hover {
     color: #ccc;
     background-color: #000;
 
 }
+
 #header .active a {
     color: #ccc;
     background-color: #000;
@@ -66,14 +84,15 @@ a {
 #search {
     width: 100%;
     min-width: 1268px;
-    height: 600px ;
-    background:url(../img/search.jpg) no-repeat center;
+    height: 600px;
+    background: url(../img/search.jpg) no-repeat center;
     position: relative;
-    
+
 }
+
 #search .center {
     width: 600px;
-    height:60px;
+    height: 60px;
     background-color: black;
     /* border-radius: 10px; */
     opacity: 0.6;
@@ -83,8 +102,9 @@ a {
     margin-left: -300px;
     position: absolute;
 }
+
 #search .search {
-    width:478px;
+    width: 478px;
     height: 50px;
     /* background-color: black; */
     border: 1px solid #eee;
@@ -92,22 +112,23 @@ a {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top:-25px;
+    margin-top: -25px;
     margin-left: -298px;
     color: #eee;
     font-size: 24px;
-    padding:0 10px;
-  /* 消除谷歌浏览器点击时产生的边框 */
+    padding: 0 10px;
+    /* 消除谷歌浏览器点击时产生的边框 */
     outline: none;
 }
+
 #search .button {
-    width:90px;
+    width: 90px;
     height: 50px;
     position: absolute;
     /* border-radius: 10px; */
     top: 50%;
     left: 50%;
-    margin-top:-25px;
+    margin-top: -25px;
     margin-left: 208px;
     font-size: 24px;
     background-color: #fff;
