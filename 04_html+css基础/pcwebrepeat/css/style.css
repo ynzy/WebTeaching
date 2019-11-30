@@ -2,7 +2,7 @@
 
 body,
 ul,
-h1 {
+h1,h2,p {
     margin: 0;
     padding: 0;
 }
@@ -133,4 +133,29 @@ a {
     font-size: 24px;
     background-color: #fff;
     cursor: pointer;
+}
+/* 热门旅游 */
+#tour {
+    width: 1263px;
+    height: 600px;
+    background-color: #eee;
+    /* 盒子居中 */
+    margin: 30px auto;
+}
+#tour .center {
+    text-align: center;
+
+}
+#tour .center h2 {
+    color: #666;
+    font-size: 45px;
+    /* padding: 10px 0; */
+    margin: 10px 0 ;
+    letter-spacing: 2px;
+}
+#tour .center p {
+    color: #666;
+    margin: 10px 0;
+    
+    
 }
