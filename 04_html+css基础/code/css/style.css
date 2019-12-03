@@ -239,8 +239,8 @@ a {
 /* 热门旅游 */
 #tour {
     width: 1263px;
-    height: 2000px;
-    background-color: #eee;
+    height: 1150px;
+    /* background-color: #eee; */
     margin: 30px auto;
     text-align: center;
 } 
@@ -267,7 +267,7 @@ a {
     display:inline-block;
     padding: 4px;
     border-radius: 10px;
-    /* margin:15px 12px; */
+    margin:15px 12px;
     text-align: left;
     position: relative;
     background-color:#fff;
@@ -319,6 +319,49 @@ a {
     top: 4px;
     text-align: center;
     line-height: 25px;
+}
+/* footer */
+#footer {
+    height: 360px;
+    background-color: #222;
+}
+
+/* 网站导航信息 */
+#footer .top {
+    width: 1263px;
+    height: 281px;
+    /* 供测试用 */
+    background-color: red;
+    margin: 0 auto;
+    text-align: center;
+}
+#footer .left {
+    width: 410px;
+    height: 280px;
+    background-color: #f60;
+    display: inline-block;
+}
+#footer .center {
+    width: 410px;
+    height: 280px;
+    background-color: green;
+    display: inline-block;
+}
+#footer .right{
+    width: 410px;
+    height: 280px;
+    background-color: yellow;
+    display:inline-block;
+}
+
+ /* 网站版权信息，经营许可证 */
+#footer .bottom {
+    color: #777;
+    background-color: #000;
+    text-align: center;
+    line-height: 80px;
+    border-top: 1px solid #444;
+
 }
 
 
