@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body,
-h1,h2,p,figure,
+h1,h2,p,figure,h3,
 ul {
     margin: 0;
     padding: 0;
@@ -180,6 +180,12 @@ a {
 #footer {
     height: 360px;
     background-color: #222;
+    clear:both;
+    /* 浮动清除后，margin就不起作用了 */
+    /* margin:100px 0  0 10px; */
+    position: relative;
+    /* 在原来的基础上移动 */
+    top:20px;
 }
 
 /* 网站导航信息 */

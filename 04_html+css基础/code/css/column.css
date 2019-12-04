@@ -1,15 +1,148 @@
 @charset "utf-8";
-#headerline {
+
+/* 小的头部图片 */
+#headline {
     width: 100%;
     min-width: 1263px;
     height: 300px;
     /* background-image: url(../img/search.jpg);
     background-repeat: no-repeat;
     background-position: center; */
-    background: url(../img/headline.jpg) no-repeat center;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../img/headline.jpg) no-repeat center;
 }
-#headerline .center {
+
+#headline .center {
     width: 1263px;
     height: 300px;
     margin: 0 auto;
+}
+
+#headline hgroup {
+    padding: 100px 0 0 50px;
+
+}
+
+#headline h2 {
+    color: #fff;
+    font-size: 40px;
+}
+
+#headline h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* 侧栏 */
+#container {
+    width: 1263px;
+    /* height: 1200px; */
+    margin: 30px auto;
+}
+
+#container .sidebar {
+    width: 320px;
+        /* 这个地方要自适应 */
+    /* height: 1200px; */
+    /* background-color:#eee; */
+    float: right;
+}
+
+#container .sidebox {
+    border: 1px solid #eee;
+    margin: 0 0 10px 0;
+    /* text-align: left; */
+
+}
+
+#container h2 {
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-indent: 8px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fafafa;
+    color: #666;
+    text-align: left;
+
+}
+
+#container .tag {
+    padding: 10px 0;
+
+
+}
+
+#container .tag a {
+    background-color: #eee;
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    margin: 2px 0;
+    color: #999;
+    text-align: left;
+    text-indent: 8px;
+
+}
+
+#container .tag a:hover {
+    background-color: #458b00;
+    color: #fff;
+}
+
+#container .figure {
+    padding: 10px 0;
+
+}
+
+#container figure {
+    display: inline-block;
+    padding: 4px 0;
+    color: #666;
+}
+
+#container .box {
+    padding: 10px 0;
+
+}
+
+#container .box a {
+    background-color: #eee;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    margin: 2px 0;
+    color: #999;
+    text-align: left;
+    text-indent: 35px;
+}
+/* #container .box a:hover {
+    background-color: #458b00;
+    color: #fff;
+} */
+#container .box a.trea1 {
+    background:#eee url(../img/trea1.png) no-repeat 10px ;
+}
+#container .box a.trea2 {
+    background:#eee url(../img/trea2.png) no-repeat 10px ;
+}
+#container .box a.trea3 {
+    background:#eee url(../img/trea3.png) no-repeat 10px ;
+}
+#container .box a.trea4 {
+    background:#eee url(../img/trea4.png) no-repeat 10px ;
+}
+/* #container .box a.trea1:hover {
+    background:#ccc;
+} */
+
+#container .list {
+    width: 920px;
+    /* 这个地方要自适应 */
+    /* height: 1200px; */
+    background-color: #ccc;
+    float: left;
 }
