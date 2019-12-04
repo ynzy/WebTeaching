@@ -286,6 +286,9 @@ a {
     font-size:14px;
     padding: 7px 0 5px 0;
 }
+#tour info {
+    padding: 5px 0 ;
+}
 /* 芭提雅 */
 #tour figcaption .title {
     color: #333;

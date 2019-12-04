@@ -51,7 +51,7 @@
 #container .sidebox {
     border: 1px solid #eee;
     margin: 0 0 10px 0;
-    /* text-align: left; */
+    text-align: center;
 
 }
 
@@ -73,19 +73,26 @@
 
 
 }
-
-#container .tag a {
+#container .tag li {
     background-color: #eee;
     display: inline-block;
     width: 100px;
     height: 35px;
     line-height: 35px;
-    margin: 2px 0;
-    color: #999;
+    margin: 2px 0px;
     text-align: left;
-    text-indent: 8px;
+    text-indent: 8px; 
 
 }
+#container .tag a {  
+    display: block;
+    color: #999; 
+   
+}
+/* #container .tag a{
+    color: #999;
+    color: #fff;
+} */
 
 #container .tag a:hover {
     background-color: #458b00;
@@ -138,11 +145,98 @@
 /* #container .box a.trea1:hover {
     background:#ccc;
 } */
-
+/* 子导航  */
 #container .list {
-    width: 920px;
+    width: 930px;
     /* 这个地方要自适应 */
     /* height: 1200px; */
-    background-color: #ccc;
+    /* background-color: #ccc; */
     float: left;
+}
+/* 子导航菜单  */
+#container .infor {
+    height: 45px;
+    line-height: 45px;
+    background: #eee;
+    margin: 0 0 20px 0;
+}
+#container .left {
+    /* display: inline-block; */
+    /* background: lightblue; */
+    float:left;
+}
+#container .left li {
+    display: inline-block;
+    width: 150px;
+    height: 43px;
+    line-height: 43px;
+    font-size: 18px;
+    text-align: center;
+    
+}
+#container .left li:first-child{
+    background-color:#fff;
+    border-top: 2px solid #458b00;
+    position: relative;
+    left: 1px;
+}
+#container .left a {
+    color: #666;
+}
+#container .right {
+    /* display: inline-block; */
+    
+    padding-right: 20px;
+    float:right;   
+}
+#container .right li {
+    display: inline-block;
+    /* background: lightcoral; */
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+}
+#container .right a {
+    color:#666;
+    
+    padding: 3px 8px;
+}
+#container .right a.selected,#container .right a:hover {
+    color: #fff;
+    background-color:  #458b00;
+}
+/* 子导航列表 */
+#container .tour {
+    width: 928px;
+    /* background:#ccc; */
+    padding: 0;
+    margin: 0 0 20px 0;
+    border: 1px solid #eee;
+    /* position: relative; */
+}
+#container .tour figcaption {
+    width: 548px;
+    height: 230px;
+    /* background: cadetblue; */
+    float: right;
+}
+#container .tour img {
+    /* vertical-align: middle; */
+    float: left;
+} 
+#container .tour footer {
+    width: 548px;
+    height: 30px;
+    background: crimson;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-indent: 25px;
+    /* position: absolute; */
+    position: relative;
+    
+    bottom: 0;
+
+
 }

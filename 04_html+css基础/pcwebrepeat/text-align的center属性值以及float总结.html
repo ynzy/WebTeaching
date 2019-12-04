@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text-align的center属性值以及float总结</title>
+    <style>
+        body,
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* text-align属性 */
+        .div1 {
+            width: 100%;
+            height: 200px;
+            background: green;
+            text-align: center;
+            color: honeydew;
+        }
+
+        .div2 {
+            /* div转化为行内块级元素元素，设置宽高有效,不会报错，容器会居中，但也是和其他元素相对居中 */
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            background: #00f;
+        }
+
+        span {
+            /* span是行内元素设置宽高不起作用 */
+            /* height: 100px; */
+            /* span转化为块级元素，设置宽高有效,但是容器不再会居中 ，说明对block不起作用*/
+            display: block;
+            width: 100px;
+            height: 60px;
+            background: orange;
+        }
+
+        .div3 {
+            /* div转化为行内元素，设置宽高就失效,so会报错，但是容器会居中 */
+            /* display: inline; */
+            width: 100px;
+            height: 60px;
+            background: #f00;
+        }
+
+        h1 {
+            width: 300px;
+            height: 50px;
+            font-weight: normal;
+            font-size: 14px;
+            background: pink;
+        }
+
+        .box1 {
+            width: 100%;
+            height: 200px;
+            background: #0f0;
+            /* float: right; */
+        }
+
+        .box2 {
+            width: 160px;
+            height: 60px;
+            background: #00f;
+            float: right;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 60px;
+            background: pink;
+
+        }
+
+        h1 {
+            width: 500px;
+            height: 50px;
+            font-weight: normal;
+            font-size: 14px;
+            background: red;
+        }
+        .div11 {
+            height: 200px;
+            background: #000;
+            width: 200px;
+        }
+        .div21 {
+            background: #0f0;
+            height:300px;
+            width: 300px;
+            /* float: left; */
+        }
+        .div31 {
+            /* margin-top: 30px; */
+            width:200px;
+            height:150px;
+            background: #009;
+        }
+    </style>
+</head>
+
+<body>
+        <!-- https://blog.csdn.net/zerountao/article/details/37735643 -->
+    <!-- 1. text-align属性的演示  -->
+    <!-- 对于text-align的center属性有如下特点：
+        1、将text-align的center应用在一个容器上，它只是针对容器里面的文字以及容器里面的display为inline或者inline-block的容器，如果里面的容器display为block，则里面的容器不会居中
+        
+        2、text-align具有向下传递性，会不断向子元素传递 -->
+
+    <!-- <div class="div1">我是祖先，居中块元素的文字
+        <h1>我是块元素的文字</h1>
+        <div class="div3">我是中心</div>
+
+        <div class="div2">第三个中心</div>
+
+        <span>这是中心</span>
+    </div> -->
+
+    <!-- float属性的演示 -->
+    <!-- 1. 对比说明float可作用于容器本身，但不能作用于容器里面的内容，也不能传递 -->
+    <!-- <div class="box1">我是祖先容器的文本我是祖先容器的文本我是祖先容器的文本我是祖先容器的文本我是祖先容器的文本我是祖先容器的文本
+    <div class="box2">我是子元素容器的文本box2</div>
+    <div><div class="box3">我是子元素容器的文本box3</div></div> -->
+    <!-- <span>我是行内元素</span>
+    <h1>我是块级元素</h1> -->
+    <!-- </div> -->
+
+    <div class="div11">
+        <div class="div21">
+            <p>我在div1里</p>
+        </div>
+    </div>
+    <div class="div31"></div>
+
+
+
+
+
+
+</body>
+
+</html>
