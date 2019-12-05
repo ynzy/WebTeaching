@@ -305,14 +305,22 @@
     top:0;
     right: 0;
     background:url(../img/disc.png) no-repeat;
-    width: 45px;
-    height: 45px;
+    width: 52px;
+    height: 52px;
     /* background-color: aqua; */
     /* transform:rotate(45deg); */
 }
 #container .tour .disc span {
-    
+    display: block;
+    /* 旋转45度，对内联无效 */
     transform: rotate(45deg);
+    width: 52px;
+    height: 52px;
+    font-size: 14px;
+    color: #ff7a4d;
+    text-indent: 7px;
+    padding: 5px 0 0 0;
+
 }
 
 
@@ -328,4 +336,19 @@
 }
 #container .tour time {
     color: #458b00;
+}
+#container .list .more {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 0 auto ;
+    background-color: #fafafa;
+    /* 不是超链接就不带有手型，会执行javascript； */
+    cursor: pointer;
+    
+    
 }
