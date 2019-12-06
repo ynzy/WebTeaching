@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* 旅游资讯页面样式 */
 
 /* 小的头部图片 */
 #headline {
@@ -42,7 +43,7 @@
 
 #container .sidebar {
     width: 320px;
-        /* 这个地方要自适应 */
+    /* 这个地方要自适应 */
     /* height: 1200px; */
     /* background-color:#eee; */
     float: right;
@@ -73,6 +74,7 @@
 
 
 }
+
 #container .tag li {
     background-color: #eee;
     display: inline-block;
@@ -81,14 +83,16 @@
     line-height: 35px;
     margin: 2px 0px;
     text-align: left;
-    text-indent: 8px; 
+    text-indent: 8px;
 
 }
-#container .tag a {  
+
+#container .tag a {
     display: block;
-    color: #999; 
-   
+    color: #999;
+
 }
+
 /* #container .tag a{
     color: #999;
     color: #fff;
@@ -126,22 +130,27 @@
     text-align: left;
     text-indent: 35px;
 }
+
 /* #container .box a:hover {
     background-color: #458b00;
     color: #fff;
 } */
 #container .box a.trea1 {
-    background:#eee url(../img/trea1.png) no-repeat 10px ;
+    background: #eee url(../img/trea1.png) no-repeat 10px;
 }
+
 #container .box a.trea2 {
-    background:#eee url(../img/trea2.png) no-repeat 10px ;
+    background: #eee url(../img/trea2.png) no-repeat 10px;
 }
+
 #container .box a.trea3 {
-    background:#eee url(../img/trea3.png) no-repeat 10px ;
+    background: #eee url(../img/trea3.png) no-repeat 10px;
 }
+
 #container .box a.trea4 {
-    background:#eee url(../img/trea4.png) no-repeat 10px ;
+    background: #eee url(../img/trea4.png) no-repeat 10px;
 }
+
 /* #container .box a.trea1:hover {
     background:#ccc;
 } */
@@ -153,6 +162,7 @@
     /* background-color: #ccc; */
     float: left;
 }
+
 /* 子导航菜单  */
 #container .infor {
     height: 45px;
@@ -160,36 +170,42 @@
     background: #eee;
     margin: 0 0 20px 0;
 }
-#container .left {
+
+#container .information .left {
     /* display: inline-block; */
     /* background: lightblue; */
-    float:left;
+    float: left;
 }
-#container .left li {
+
+#container .information .left li {
     display: inline-block;
     width: 150px;
     height: 43px;
     line-height: 43px;
     font-size: 18px;
     text-align: center;
-    
+
 }
-#container .left li:first-child{
-    background-color:#fff;
+
+#container .information .left li:first-child {
+    background-color: #fff;
     border-top: 2px solid #458b00;
     position: relative;
     left: 1px;
 }
-#container .left a {
+
+#container .information .left a {
     color: #666;
 }
-#container .right {
+
+#container .information .right {
     /* display: inline-block; */
-    
+
     padding-right: 20px;
-    float:right;   
+    float: right;
 }
-#container .right li {
+
+#container .information .right li {
     display: inline-block;
     /* background: lightcoral; */
     width: 60px;
@@ -198,15 +214,19 @@
     text-align: center;
     font-size: 16px;
 }
-#container .right a {
-    color:#666;
-    
+
+#container .information .right a {
+    color: #666;
+
     padding: 3px 8px;
 }
-#container .right a.selected,#container .right a:hover {
+
+#container .information .right a.selected,
+#container .information .right a:hover {
     color: #fff;
-    background-color:  #458b00;
+    background-color: #458b00;
 }
+
 /* 子导航列表 */
 #container .tour {
     width: 928px;
@@ -216,65 +236,78 @@
     border: 1px solid #eee;
     position: relative;
 }
+
 #container .tour img {
     /* vertical-align: middle; */
     float: left;
-} 
+}
+
 #container .tour figcaption {
     width: 548px;
     height: 230px;
     /* background: cadetblue; */
     float: right;
-  
+
 }
+
 #container .tour hgroup {
     width: 300px;
 }
+
 #container .tour h2 {
     font-size: 24px;
     font-weight: normal;
-    padding:10px 0 10px 25px;
+    padding: 10px 0 10px 25px;
     color: #333;
 }
+
 #container .tour h3 {
     font-size: 16px;
     padding: 10px 0 10px 25px;
     line-height: 1.5;
     font-weight: normal;
     color: #666;
-    
+
 }
+
 #container .tour ol {
     padding: 0 0 0 25px;
     line-height: 2;
     color: #666;
 }
+
 #container .tour mark {
-    background-color:#fff;
+    background-color: #fff;
     border: 1px solid #458b00;
     border-radius: 4px;
     padding: 0 5px;
     color: #458b00;
 }
+
 #container .tour .buy {
     position: absolute;
     top: 55px;
     right: 30px;
 }
+
 #container .tour .price {
     font-size: 20px;
-    color:#f60;
+    color: #f60;
 }
+
 #container .tour .price strong {
     font-size: 36px;
 }
+
 #container .tour .price s {
     font-size: 16px;
     color: #999;
 }
+
 #container .tour .reserve {
     margin: 10px 0 0 0;
-} 
+}
+
 #container .tour .reserve a {
     display: block;
     width: 152px;
@@ -285,8 +318,9 @@
     background-color: #f60;
     font-size: 20px;
     text-align: center;
-    
-} 
+
+}
+
 #container .tour .type {
     width: 90px;
     height: 25px;
@@ -300,16 +334,18 @@
     text-align: center;
     line-height: 25px;
 }
+
 #container .tour .disc {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
-    background:url(../img/disc.png) no-repeat;
+    background: url(../img/disc.png) no-repeat;
     width: 52px;
     height: 52px;
     /* background-color: aqua; */
     /* transform:rotate(45deg); */
 }
+
 #container .tour .disc span {
     display: block;
     /* 旋转45度，对内联无效 */
@@ -334,21 +370,192 @@
     position: absolute;
     bottom: 0;
 }
+
 #container .tour time {
     color: #458b00;
 }
-#container .list .more {
+
+#container .information .more,#container .scenery .more  {
     width: 200px;
     height: 50px;
     line-height: 50px;
-    text-align:center;
-    border:1px solid #ccc;
+    text-align: center;
+    border: 1px solid #ccc;
     border-radius: 10px;
     font-size: 18px;
-    margin: 0 auto ;
+    margin: 0 auto;
     background-color: #fafafa;
     /* 不是超链接就不带有手型，会执行javascript； */
     cursor: pointer;
-    
+}
+
+/* 机票预定 */
+#container .ticket,#container .scenery,#container .about {
+    color: #666;
+}
+
+#container .ticket h2,#container .scenery h2,#container .about h2 {
+    /* background-color: aqua; */
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px dashed #999;
+    /* margin: 0 0 15px 0; */
+    padding: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#container .ticket .type {
+    /* background-color: rgb(192, 29, 170); */
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+}
+
+#container .ticket .type mark {
+    color: #fff;
+    background-color: #458b00;
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin: 0 10px 0 16px;
+}
+
+#container .ticket .left {
+    display: inline-block;
+    width: 43%;
+}
+
+#container .ticket .right {
+    width: 43%;
+    display: inline-block;
+}
+
+#container .ticket .button {
+    width: 9%;
+    display: inline-block;
+    /* background-color: #458b00;  */
+}
+
+#container .ticket .submit {
+    display: block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #f60;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    position: relative;
+    top: -28px;
+    cursor: pointer;
+}
+#container .ticket .form {
+    font-size: 20px;
+}
+#container .ticket .form p {
+    line-height: 3;
+}
+#container .ticket .form input {
+    background-color: #fff;
+    width: 250px;
+    height: 30px;
+    border-radius: 4px;
+    color: #666;
+    padding: 5px;
+    margin: 0 0 0 16px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+/* 最新机票展示 */
+#container .ticket .new {
+    margin: 20px 0 0 0 ;
+    /* background-color: #458b00; */
+}
+#container .ticket .new ul {
+    margin: 20px 0 0 0 ;
     
 }
+#container .ticket .new li {
+    display: inline-block; 
+    padding:5px 10px;  
+}
+/* 伪类 */
+#container .ticket .new li:first-child {
+    padding-left: 0;
+}
+/* 伪类 */
+#container .ticket .new li:nth-child(2) {
+    background-color: #458b00;
+    border-radius: 4px;
+    color: #fff;
+}
+#container .ticket table {
+    margin: 20px 0 0 0 ;
+    width: 100%;
+    border: 1px solid #ddd;
+    /* 去掉填充 */
+    border-collapse: collapse;
+}
+#container .ticket th {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+}
+#container .ticket td {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+#container .ticket tr:nth-child(2n) {
+    background-color: #fafafa;
+}
+#container .ticket tr:hover {
+    background-color: #eee;
+}
+#container .ticket .price {
+    color: #f60;
+}
+#container .ticket .reserve {
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #f60;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+/* 风景欣赏页面样式 */
+#container .scenery figure {
+    font-size:14px;
+    border: 1px solid #ddd;
+    display:inline-block;
+    padding: 8px;
+    border-radius: 10px;
+    margin:15px 9px 15px 0;
+    text-align: left;
+    width: 435px;
+    background-color:#fff;
+}
+#container .scenery figcaption {
+    text-align: center;
+    padding: 5px 0 ;
+}
+#container .about p, #container .about address {
+    line-height: 2;
+    margin: 20px 0;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
