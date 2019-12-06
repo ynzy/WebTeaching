@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* 单位采用rem */
+body,
+h1,h2,p,figure,h3,ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+ul,ol {
+    list-style: outside none none;
+}
+/* 图片响应式 */
+img {
+    /* 自适应分辨率 */
+    display: block;
+    /* 流体 */
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.none {
+    display: none;
+}
+/* 首页 */
