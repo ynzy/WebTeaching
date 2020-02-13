@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./index.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+</head>
+<style>
+  div {
+    color: blue
+  }
+
+  .red {
+    color: red
+  }
+
+  * {
+    margin: 0;
+    /* 定义外边距*/
+    padding: 0;
+    /* 定义内边距*/
+  }
+
+  .header {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    border: 1px solid #000;
+    text-indent: 2em;
+  }
+
+  .header-item {
+    /* font-size: 2em; */
+    /* 透明值是0-1 */
+    /* color: rgb(0, 0, 0, 0.1); */
+    color: #000;
+    /* opacity: 0.4; */
+
+  }
+
+  a {
+    text-decoration: none
+  }
+
+  /* em换算成px的关系
+    当前元素的字体大小 = 父级元素的字体大小 * em的倍数 
+  */
+  /* nec规范 */
+</style>
+
+<body>
+  <div class="header">
+    我是一个div
+    <!-- <span class="header-item">我是一个span</span> -->
+  </div>
+  <a href="">我是一个链接</a>
+  <!-- <button type="button" class="btnBlue">（首选项）Primary</button> -->
+  <form action="">
+    <label for="">张三</label>
+    <input class="" id="" type="radio" value="1" name="yinianji">
+    <label for="lisi">李四</label>
+    <input class="" id="lisi" type="radio" value="2" name="yinianji">
+    <!-- <input class="" id="input" type="checkbox" name="ernianji">王五
+    <input class="" id="input" type="checkbox" name="ernianji">赵六 -->
+    <button>提交表单</button>
+    <!-- {
+      yinianji: [1,2]
+    } -->
+  </form>
+</body>
+
+</html>
+<script>
+  var inputText = document.getElementById('input')
+  console.log(inputText);
+</script>
