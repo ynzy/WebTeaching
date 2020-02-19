@@ -1,0 +1,113 @@
+/* css初始化代码 css reset 清除默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+body {
+  background: #f3f5f7;
+}
+
+/* 内容容器 */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 浮动功能 start */
+.f-fl {
+  float: left;
+}
+
+.f-fr {
+  float: right;
+}
+
+.f-cb:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.f-cb:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 浮动功能 end */
+
+/* header start */
+.header {
+  height: 42px;
+  margin: 30px auto;
+  /* background-color: pink; */
+}
+
+.logo {
+  margin-right: 60px;
+}
+
+.nav ul li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #050505;
+}
+
+/* 鼠标经过才有边框 */
+.nav ul li a:hover {
+  border-bottom: 2px solid #00a3fa;
+}
+
+.search {
+  margin-left: 70px;
+}
+
+.search input {
+  width: 340px;
+  height: 40px;
+  padding-left: 20px;
+  border: 1px solid #00a4ff;
+  border-right: 0;
+  color: #bfbfbf;
+}
+
+.search button {
+  width: 50px;
+  height: 42px;
+  background: url(images/btn.jpg);
+}
+
+.user {
+  height: 42px;
+  line-height: 42px;
+  margin-left: 30px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+/* header end */
