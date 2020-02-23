@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>定位父相子绝</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 父元素不一定用相对定位 */
+  /* 子元素使用绝对定位，父元素一定要有定位属性 relative absolute fixed */
+  /* 子元素使用绝对定位，父元素使用相对定位，不给定位方向，不会影响父元素的布局 */
+  .father {
+    position: relative;
+    /* left: 50%; */
+    width: 400px;
+    height: 400px;
+    background: pink;
+  }
+
+  .son {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    background: green;
+  }
+</style>
+
+<body>
+  <div class="father">
+    <div class="son"></div>
+  </div>
+</body>
+
+</html>

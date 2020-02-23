@@ -1,0 +1,163 @@
+@c_red: #c81623;
+@c_gray: #666;
+
+// 公共样式
+.f-fl {
+  float: left;
+}
+
+.f-fr {
+  float: right;
+}
+
+.f-cb:after,
+.f-cb:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+// 版心
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.style_red {
+  color: @c_red;
+}
+
+// 顶部导航栏 start
+.shortcut {
+  width: 100%;
+  height: 31px;
+  line-height: 31px;
+  background-color: #f1f1f1;
+
+  ul {
+    li {
+      .f-fl;
+
+      a {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .shortcut-nav {
+    ul {
+      li {
+        a {
+          margin: 0;
+        }
+
+        i {
+          margin-left: 5px;
+          line-height: 30px;
+        }
+      }
+
+      .spacer {
+        width: 1px;
+        height: 12px;
+        margin: 9px 12px 0;
+        background: @c_gray;
+      }
+    }
+  }
+}
+
+// 顶部导航栏 end
+// header start
+.header {
+  position: relative;
+  height: 105px;
+
+  .logo {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 176px;
+    height: 55px;
+
+    a {
+      display: block;
+      width: 176px;
+      height: 55px;
+      font-size: 0;
+      background: url(../img/logo.png) no-repeat;
+    }
+  }
+
+  .search {
+    position: absolute;
+    top: 25px;
+    left: 348px;
+
+    .text {
+      .f-fl;
+      width: 442px;
+      height: 32px;
+      padding-left: 12px;
+      border: 2px solid #b1191a;
+    }
+
+    .btn {
+      .f-fl;
+      width: 80px;
+      height: 36px;
+      color: #fff;
+      background-color: #b1191a;
+    }
+  }
+
+  .hotwords {
+    position: absolute;
+    top: 68px;
+    left: 348px;
+    font-size: 12px;
+
+    a {
+      margin: 0 10px;
+    }
+  }
+
+  .shopcar {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 140px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    color: @c_gray;
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+
+    .icon-gouwuche2 {
+      margin-right: 7px;
+      color: @c_red;
+    }
+
+    .icon-youjiantou {
+      margin-top: 3px;
+      margin-left: 14px;
+    }
+
+    .count {
+      position: absolute;
+      top: -6px;
+      // 靠左对齐，宽度变大向右走
+      left: 105px;
+      height: 14px;
+      padding: 0 5px;
+      line-height: 14px;
+      color: #fff;
+      background: @c_red;
+      // 左上 右上 右下 左下
+      border-radius: 7px 7px 7px 0;
+    }
+  }
+}
+
+// header end

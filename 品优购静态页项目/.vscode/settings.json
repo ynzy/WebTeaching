@@ -1,0 +1,16 @@
+{
+  "autoprefixer.browsers": [
+    // "last 9 versions", 
+    "ie >= 6", //ie6以上
+    "firefox >= 8",
+    "chrome >= 24",
+    "Opera>=10"
+  ],
+  "less.compile": {
+    "compress": true, // true => remove surplus whitespace
+    "sourceMap": false, // true => generate source maps (.css.map files)
+    "out": "${workspaceRoot}\\css\\", // false => DON'T output .css files (overridable per-file, see below)
+    "outExt": ".css",
+    "autoprefixer": "> 5%, last 2 Chrome versions, not ie 6-9"
+  }
+}

@@ -1,0 +1,194 @@
+@c_blue: #00a4ff;
+
+// 清除默认样式
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+body {
+  // 给个高度使页面滚动，方便开发，开发完后要注释掉
+  height: 3000px;
+  background: #f3f5f7;
+}
+
+// 内容区（版心）
+.w {
+  width: 1200px;
+  margin: auto;
+}
+
+// 浮动 start 
+.f-fl {
+  float: left;
+}
+
+.f-fr {
+  float: right;
+}
+
+.f-cb:after,
+.f-cb:before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+// 浮动 end
+
+// header start
+.header {
+  height: 42px;
+  margin: 30px auto;
+
+  .logo {
+    margin-right: 65px;
+  }
+}
+
+.nav {
+  ul {
+    li {
+      a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 10px;
+        margin-right: 20px;
+        font-size: 18px;
+        color: #050505;
+
+        &:hover {
+          border-bottom: 2px solid @c_blue;
+        }
+      }
+    }
+  }
+}
+
+.search {
+  margin-left: 70px;
+
+  input {
+    width: 340px;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid @c_blue;
+    border-right: none;
+    color: #bfbfbf;
+  }
+
+  button {
+    width: 50px;
+    height: 42px;
+    background: url('./images/btn.jpg');
+  }
+}
+
+.user {
+  height: 42px;
+  line-height: 42px;
+  margin-left: 30px;
+  font-size: 14px;
+  color: #666666;
+
+  img {
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+}
+
+// header end
+
+// banner start
+.banner {
+  width: 100%;
+  height: 420px;
+  background: #1c036c url(./images/banner2.jpg) no-repeat top center;
+}
+
+.subnav {
+  width: 190px;
+  height: 420px;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+
+  ul {
+    li {
+      height: 45px;
+      line-height: 45px;
+
+      a {
+        font-size: 14px;
+        color: #fff;
+
+        &:hover {
+          color: @c_blue;
+        }
+      }
+    }
+  }
+}
+
+.course {
+  width: 228px;
+  height: 300px;
+  margin-top: 50px;
+  background: #fff;
+
+  dl {
+    dt {
+      width: 100%;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background: #9bceea;
+    }
+
+    dd {
+      height: 50px;
+      margin: 0 19px;
+      margin-top: 15px;
+      border-bottom: 1px solid #ccc;
+
+      h4 {
+        font-size: 16px;
+        color: #4e4e4e;
+      }
+
+      p {
+        font-size: 12px;
+        color: #a5a5a5;
+      }
+    }
+  }
+
+  .all {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 5px auto 0 auto;
+    line-height: 40px;
+    text-align: center;
+    border: solid 1px @c_blue;
+    color: @c_blue;
+  }
+}
+
+// banner end
