@@ -1,0 +1,117 @@
+.main {
+  width: 980px;
+  height: 456px;
+  margin-left: 222px;
+  margin-top: 10px;
+
+  .focus {
+    position: relative;
+    width: 721px;
+    height: 455px;
+    background: purple;
+
+    .arrow-l,
+    .arrow-r {
+      position: absolute;
+      top: 50%;
+      width: 24px;
+      height: 40px;
+      margin-top: -20px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      background: rgba(0, 0, 0, .2);
+    }
+
+    .arrow-r {
+      right: 0;
+    }
+
+    .circle {
+      position: absolute;
+      bottom: 10px;
+      left: 50px;
+
+      li {
+        float: left;
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 50%;
+        // 鼠标经过显示小手
+        cursor: pointer;
+      }
+
+      .current {
+        background: #fff;
+        box-shadow: 1px 1px 1px rgba(255, 255, 255, .5);
+      }
+    }
+  }
+
+  .newsflash {
+    width: 252px;
+    height: 455px;
+
+    .news {
+      border: 1px solid #ccc;
+
+      .news-hd {
+        height: 32px;
+        padding: 0 15px;
+        line-height: 32px;
+        font-size: 14px;
+        // dotted 点线 dashed 虚线
+        border-bottom: 1px dotted #ccc;
+      }
+
+      .news-bd {
+        padding: 10px 0 0 15px;
+
+        li {
+          height: 23px;
+        }
+      }
+    }
+
+    .lifeservice {
+      height: 210px;
+      border: 1px solid #ccc;
+      border-top: none;
+      // 超出部分隐藏
+      overflow: hidden;
+
+      ul {
+        width: 252px;
+
+        li {
+          float: left;
+          width: 62px;
+          height: 70px;
+          text-align: center;
+          border-right: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+
+          a {
+            display: block;
+            padding-top: 10px;
+          }
+
+          i {
+            color: #c81623;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .bargain {
+      height: 75px;
+      margin-top: 5px;
+    }
+  }
+}
