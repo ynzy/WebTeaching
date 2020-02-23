@@ -161,3 +161,72 @@
 }
 
 // header end
+
+// nav start
+.nav {
+  height: 45px;
+  border-bottom: 2px solid #b1191a;
+
+  .dropdown {
+    width: 209px;
+    height: 45px;
+    background: pink;
+
+    .dt {
+      height: 100%;
+      line-height: 45px;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      background: #b1191a;
+    }
+
+    .dd {
+      height: 465px;
+      margin-top: 2px;
+      background: @c_red;
+
+      .menu_item {
+        padding: 0 10px;
+        height: 31px;
+        line-height: 31px;
+
+        &:hover {
+          background: #fff;
+
+          a {
+            color: @c_red;
+          }
+        }
+
+        a {
+          color: #fff;
+
+        }
+
+        i {
+          .f-fr;
+          color: #fff;
+        }
+
+      }
+    }
+  }
+
+  .navitems {
+    li {
+      .f-fl;
+      margin-left: 10px;
+
+      a {
+        display: block;
+        height: 45px;
+        line-height: 45px;
+        padding: 0 25px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// nav end
