@@ -204,16 +204,19 @@
 
   .w219 {
     width: 219px;
+    border-right: 1px solid #ccc;
   }
 
   .w220 {
     width: 220px;
+    border-right: 1px solid #ccc;
   }
 
   .tab-con {
     li {
       float: left;
       height: 360px;
+      overflow: hidden;
     }
 
     .tab-con-list {
@@ -229,6 +232,17 @@
 
     .tab-con-item {
       border-bottom: 1px solid #ccc;
+    }
+  }
+
+  // 添加动画
+  img {
+    // 过渡写在本身上，谁做动画给谁加
+    transition: all 0.2s;
+
+    // 鼠标经过图片时 往右走8px
+    &:hover {
+      margin-left: 8px;
     }
   }
 }
