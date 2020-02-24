@@ -344,3 +344,31 @@ body {
 }
 
 /* footer end */
+
+
+/* aside_fixed */
+.aside_fixed {
+  position: fixed;
+  top: 200px;
+  left: 50%;
+  margin-left: -805px;
+  width: 180px;
+  height: 425px;
+  background-color: #fff;
+}
+
+.aside_fixed ul {
+  margin-top: 10px;
+}
+
+.aside_fixed li {
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.aside_fixed li:hover {
+  /* 鼠标移入样式 */
+  cursor: pointer;
+  color: #00a4ff;
+}
