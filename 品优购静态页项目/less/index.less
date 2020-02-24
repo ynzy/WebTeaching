@@ -1,3 +1,5 @@
+// 这个文件放的是首页的样式
+// main start
 .main {
   width: 980px;
   height: 456px;
@@ -113,5 +115,145 @@
       height: 75px;
       margin-top: 5px;
     }
+  }
+}
+
+// main end
+
+// 推荐服务 start
+.recommend {
+  margin-top: 10px;
+  height: 162px;
+
+  .recom-hd {
+    width: 200px;
+    height: 162px;
+    text-align: center;
+    font-size: 18px;
+    background: #5c5251;
+
+    img {
+      margin: 30px 0 15px 0;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: normal;
+      color: #fff;
+    }
+  }
+
+  .recom-bd {
+    width: 1000px;
+    height: 162px;
+    background-color: #ebebeb;
+
+    li {
+      float: left;
+      margin-top: 10px;
+      width: 249px;
+      height: 143px;
+      border-right: 1px solid #ccc;
+    }
+
+    .last {
+      border-right: none;
+    }
+  }
+}
+
+// 推荐服务 end
+
+// 楼层区 start
+.box-hd {
+  margin-top: 30px;
+  height: 27px;
+  border-bottom: 2px solid #c81623;
+
+  h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+  }
+
+  .tab-list {
+    float: right;
+
+    li {
+      float: left;
+      line-height: 27px;
+
+      a {
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+.box-bd {
+  height: 360px;
+
+  .w209 {
+    width: 209px;
+    background-color: #f9f9f9;
+  }
+
+  .w329 {
+    width: 329px;
+  }
+
+  .w219 {
+    width: 219px;
+  }
+
+  .w220 {
+    width: 220px;
+  }
+
+  .tab-con {
+    li {
+      float: left;
+      height: 360px;
+    }
+
+    .tab-con-list {
+      li {
+        width: 86px;
+        height: 32px;
+        margin-left: 10px;
+        line-height: 32px;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+
+    .tab-con-item {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+}
+
+// 楼层区 end
+
+// 电梯导航
+.fixedtool {
+  position: fixed;
+  top: 214px;
+  left: 50%;
+  width: 66px;
+  margin-left: -676px;
+  background: #fff;
+
+  li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .current {
+    color: #fff;
+    background: #c81623;
   }
 }
