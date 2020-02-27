@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* 1. a 是设置 左侧滑动门，背景图片 */
+  a {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 15px;
+    font-size: 15px;
+    color: #Fff;
+    background: url(to.png) no-repeat;
+  }
+
+  /* 2. span 是设置 右侧滑动门 */
+  a span {
+    display: inline-block;
+    height: 33px;
+    line-height: 33px;
+    padding-right: 15px;
+    background: url(to.png) no-repeat right top;
+  }
+
+  .sanjiao {
+
+    width: 0;
+
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-top: 10px solid red;
+
+    border-right: 10px solid transparent;
+
+    border-bottom: 10px solid transparent;
+
+    border-left: 10px solid transparent;
+
+  }
+
+  .sprits {
+    width: 25px;
+    height: 25px;
+    background: url(jinlingtu.png) no-repeat 0 -132px;
+  }
+</style>
+
+<body>
+  <a href="#">
+    <span>首页klj;lkj asdfasdf</span>
+  </a>
+  <div class="sanjiao"></div>
+  <div class="sprits"></div>
+</body>
+
+</html>

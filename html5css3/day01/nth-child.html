@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* n可以是关键字 even是偶数 odd是奇数 */
+  /* ul li:nth-child(even) {
+    background: red;
+  } */
+  /* ul li:nth-child(odd) {
+    background: red;
+  } */
+  /* n 是公式，但n是从0开始计算的 */
+  /* ul li:nth-child(n) {
+    background: red;
+  } */
+  /* 2n 偶数  类似于 even */
+  /* ul li:nth-child(2n) {
+    background: red;
+  } */
+  /* 2n + 1  类似于 odd */
+  /* ul li:nth-child(2n+1) {
+    background: red;
+  }
+   */
+  /* 5n  选择第  0  5  10  15 ... */
+  /* ul li:nth-child(5n) {
+            background-color: pink;
+        } */
+  /* n+5 就是从第5个开始往后面选择 包含第5个 */
+  /* ul li:nth-child(n+5) {
+            background-color: pink;
+        } */
+  /* -n + 5 就是选择前面5个  */
+
+  ul li:nth-child(-n+5) {
+    background-color: pink;
+  }
+</style>
+
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+  </ul>
+</body>
+
+</html>

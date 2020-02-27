@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid pink;
+    margin: 30px;
+    transition: all 1s;
+    /* 1.可以跟方位名词 */
+    /* transform-origin: left bottom; */
+    /* 2.默认是 50% 50% 等价于 center center */
+    /* 3.可以是px像素 */
+    transform-origin: 50px 50px;
+  }
+
+  div:hover {
+    transform: rotate(360deg);
+  }
+</style>
+
+<body>
+  <div></div>
+</body>
+
+</html>
