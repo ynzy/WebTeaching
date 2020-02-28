@@ -2,4 +2,5 @@
 ## git冲突解决
 1. 拉取合并代码
 2. 禁用
-3. a;sdlkf 
+3. sadflk;
+4. a;sdlkf 
