@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  div :nth-child(1) {
+    background: pink;
+  }
+
+  div :nth-child(2) {
+    background: orange;
+  }
+
+  div span:nth-child(2) {
+    background: pink;
+  }
+
+  /* nth-child(n) 选择的是父元素的第n个子元素，不管子元素是什么类型*/
+  div span:nth-of-type(2) {
+    background: red;
+  }
+
+  ul li:nth-of-type(1) p {
+    color: red;
+  }
+
+  ul li:nth-of-type(1) a {
+    color: yellow;
+  }
+
+  ul li:nth-of-type(2) p {
+    color: orange;
+  }
+</style>
+
+<body>
+  <div>
+    <p>我是p</p>
+    <span>我是span</span>
+    <span>我是span</span>
+    <span>我是span</span>
+  </div>
+  <ul>
+    <li>
+      <a href="">asdlfkj</a>
+      <p>读书 </p>
+    </li>
+    <li>
+      <a href="">asdlfkj</a>
+      <p>看新闻 </p>
+    </li>
+  </ul>
+
+</body>
+
+</html>

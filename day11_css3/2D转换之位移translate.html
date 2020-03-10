@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  /* 移动盒子位置 定位 盒子外边距 2d转换移动 */
+  div {
+    width: 200px;
+    height: 200px;
+    background: pink;
+    /* transform: translate(x, y)
+  transform: translateX(n)
+  transfrom: translateY(n) */
+    /* transform: translate(50px,50px); */
+    /* transform: translateX(50px); */
+    /* transform: translateY(50px); */
+  }
+
+  div:first-child {
+    background-color: red;
+    /* margin-left: 100px;
+    margin-top: 100px; */
+    transform: translate(100px,100px);
+  }
+
+  div:nth-child(2) {
+    background-color: purple;
+  }
+</style>
+
+<body>
+  <div></div>
+  <div></div>
+</body>
+
+</html>

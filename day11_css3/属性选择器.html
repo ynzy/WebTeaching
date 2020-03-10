@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  button {
+    cursor: pointer;
+  }
+
+  /* 
+  选择的是： 既有button又有disabled这个属性的元素
+  1. 直接写属性
+   */
+  button[disabled] {
+    cursor: default;
+  }
+
+  /* 2. 属性等于值 */
+  input[type="search"] {
+    color: red;
+  }
+
+  /* 3. 以某个值开头的属性值 */
+  div[class^="icon"] {
+    color: orange;
+  }
+
+  /* 4.以某个值结尾的属性值 */
+  div[class$="ic"] {
+    color: blue;
+  }
+
+  /* 5. 包含任意值得属性值  */
+  div[class*="icon"] {
+    color: red;
+  }
+</style>
+
+<body>
+  <button>按钮</button>
+  <button>按钮</button>
+  <button disabled='disabled'>按钮</button>
+  <button disabled>按钮</button>
+  <br>
+  <input type="text" value="文本框">
+  <input type="text" value="文本框">
+  <input type="text" value="文本框">
+  <input type="search" value="文本框">
+  <input type="search" value="文本框">
+  <input type="search" value="文本框">
+  <div class="icon1">图标1</div>
+  <div class="icon2">图标2</div>
+  <div class="icon3">图标3</div>
+  <div class="icon4ic">图标4</div>
+  <div class="abcicon5">图标5</div>
+</body>
+
+</html>

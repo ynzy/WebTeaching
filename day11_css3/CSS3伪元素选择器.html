@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+  <link rel="stylesheet" href="../品优购静态页项目/fonts/iconfont.css">
+</head>
+<style>
+  div {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+  }
+
+  div::before {
+    content: '我';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: pink;
+  }
+
+  div::after {
+    content: '小猪佩奇';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: pink;
+  }
+  p {
+   width: 220px;
+   height: 22px;
+   border: 1px solid lightseagreen;
+   margin: 60px;
+   position: relative;
+}
+p::after {
+  content: '\e640';
+  font-family: 'iconfont';
+  position: absolute;
+  top: -1px;
+  right: 10px;
+}
+</style>
+
+<body>
+  <div>是</div>
+  <p ></p>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  div {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+  }
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    /* margin-top: -100px;
+    margin-left: -100px; */
+    /* transform: translate(-50%,-50%); 让盒子往上和往左走自己盒子的一半 */
+    transform: translate(-50%, -50%);
+    background-color: purple;
+  }
+
+  span {
+    transform: translate(100px, 100px);
+  }
+</style>
+
+<body>
+  <div>
+    <p>我是一个p</p>
+  </div>
+  <span>234234</span>
+</body>
+
+</html>
