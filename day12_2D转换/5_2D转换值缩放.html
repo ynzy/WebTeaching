@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  div {
+    width: 200px;
+    height: 200px;
+    background: pink;
+    /* margin: 100px; */
+  }
+
+  div:hover {
+    /* 1.  里面写的数字 不用跟单位 倍数的意思*/
+    /* transform: scale(x, y) */
+    /* transform: scale(1, 1); */
+    /* transform: scale(2, 2); */
+    /* 2. 等比缩放 */
+    /* transform: scale(2); */
+    /* 3. 宽度为原来的2倍 高度不变 */
+    /* transform: scale(2, 1); */
+    /* 4. 缩小 小于1就是缩放*/
+    /* transform: scale(0.5, 0.5); */
+    /* 5. scale优点：不会影响其他盒子，而且可以设置缩放中心点 */
+    /* width: 400px;
+    height: 400px; */
+    transform: scale(2);
+    transform-origin: left bottom;
+  }
+</style>
+
+<body>
+  <div></div>
+  1231
+</body>
+
+</html>

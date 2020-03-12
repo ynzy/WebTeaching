@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  div {
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    background: pink;
+    transition: all .5s;
+    /* 1. 加方位名词 */
+    /* transform-origin: left bottom; */
+    /* 2. % */
+    /* transform-origin: 30% 30%; */
+    /* 3. px */
+    transform-origin: 50px 50px;
+  }
+
+  div:hover {
+    transform: rotate(360deg);
+  }
+</style>
+
+<body>
+  <div></div>
+</body>
+
+</html>

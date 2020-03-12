@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid pink;
+    margin: 100px;
+    overflow: hidden;
+  }
+
+  div::before {
+    content: '前端';
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    text-align: center;
+    background: pink;
+    transform: rotate(180deg);
+    transform-origin: left bottom;
+    transition: all .5s;
+  }
+
+  div:hover::before {
+    transform: rotate(0deg)
+  }
+</style>
+
+<body>
+  <div></div>
+</body>
+
+</html>
