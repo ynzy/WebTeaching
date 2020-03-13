@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  div {
+    width: 0;
+    font-size: 20px;
+    height: 30px;
+    /* 文字强制显示一行 */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: w 5s steps(10) forwards;
+  }
+
+  @keyframes w {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 200px;
+    }
+  }
+</style>
+
+<body>
+  <div>世纪佳缘我在这里等你</div>
+</body>
+
+</html>

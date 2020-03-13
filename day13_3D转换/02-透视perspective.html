@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  body {
+    perspective: 200px;
+  }
+
+  div {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    /* transform: translate3d(400px, 100px, 100px); */
+  }
+
+  .one {
+    transform: translateZ(0);
+  }
+
+  .two {
+    transform: translate3d(400px, 0, 50px);
+  }
+</style>
+
+<body>
+  <div class="one"></div>
+  <div class="two"></div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background-color: #333;
+  }
+
+  div {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background: url('./media/bear.png') no-repeat;
+    /* 元素可以添加多个动画，用逗号隔开 */
+    animation: bear 1s steps(8) infinite, move 4s forwards;
+  }
+
+  /* 熊跑起来 */
+  @keyframes bear {
+    0% {
+      background-position: 0;
+
+    }
+
+    100% {
+      background-position: -1600px 0;
+      /* */
+    }
+  }
+
+  /* 熊移动到中间 */
+  @keyframes move {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+</style>
+
+<body>
+  <div></div>
+</body>
+
+</html>
