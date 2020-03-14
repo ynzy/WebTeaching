@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  div,
+  p {
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: pink;
+  }
+</style>
+
+<body>
+  <button>显示时间</button>
+  <p>某个时间</p>
+  <div>234</div>
+  <script>
+    let btn = document.querySelector('button')
+    let p = document.querySelector('p')
+    btn.onclick = function () {
+      p.innerText = getDate()
+    }
+    function getDate() {
+      var date = new Date();
+      // 我们写一个 2019年 5月 1日 星期三
+      var year = date.getFullYear();
+      var month = date.getMonth() + 1;
+      var dates = date.getDate();
+      var arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+      var day = date.getDay();
+      return '今天是：' + year + '年' + month + '月' + dates + '日 ' + arr[day];
+    }
+    let div = document.querySelector('div')
+    div.innerText = getDate()
+  </script>
+</body>
+
+</html>
