@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  ul {
+    margin: 300px;
+  }
+
+  ul li {
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+    width: 120px;
+    height: 35px;
+    perspective: 500px;
+  }
+
+  .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all .5s;
+    /* transform: rotateY(60deg); */
+  }
+
+  .box:hover {
+    transform: rotateX(90deg);
+  }
+
+  .box div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .front {
+    background: pink;
+    z-index: 1;
+    /* transform: rotateY(60deg); */
+    transform: translateZ(17.5px);
+  }
+
+  .bottom {
+    background: purple;
+    /* 多个属性连写 不想改变方向 有移动或者其他样式  我们优先先写移动 */
+    transform: translateY(17.5px) rotateX(-90deg);
+  }
+</style>
+
+<body>
+  <ul>
+    <li>
+      <div class="box">
+        <div class="front">前端学习</div>
+        <div class="bottom">我等你</div>
+      </div>
+    </li>
+    <li>
+      <div class="box">
+        <div class="front">前端学习</div>
+        <div class="bottom">我等你</div>
+      </div>
+    </li>
+    <li>
+      <div class="box">
+        <div class="front">前端学习</div>
+        <div class="bottom">我等你</div>
+      </div>
+    </li>
+  </ul>
+</body>
+
+</html>
