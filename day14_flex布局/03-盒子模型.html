@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  div:nth-child(1) {
+    /* 传统的盒子模型=width+border+padding */
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    padding: 10px;
+    border: 10px solid red;
+    box-sizing: content-box;
+  }
+
+  div:nth-child(2) {
+    /* 有了这个句话，就让这个盒子变成了css3盒子模型 */
+    /* padding和border就不会再撑大这个盒子 */
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    padding: 10px;
+    border: 10px solid blue;
+  }
+</style>
+
+<body>
+  <div></div>
+  <div></div>
+</body>
+
+</html>

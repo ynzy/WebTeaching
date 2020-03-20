@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /*物理像素比：2，   1css像素=2物理像素点 */
+  /* 需要一个50*50像素（css像素）的图片 直接放到iphone6里面会被放大2倍，100*100就会模糊 */
+  /* 采取方案：放一个100*100的图片，我们把这个图缩放成50*50的css像素，在手机上显示就会放大2倍， */
+  /* 缩放成50*50 */
+  img:nth-child(2) {
+    width: 50px;
+    height: 50px;
+    /* 1px, */
+  }
+</style>
+
+<body>
+  <img src="images/apple50(1).jpg" alt="">
+  <!-- 这个就是2倍图 -->
+  <img src="images/apple100.jpg" alt="">
+</body>
+
+</html>
