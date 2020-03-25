@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .box_wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .title {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: honeydew;
+    background-color: black;
+  }
+
+  .content {
+    flex: 1;
+    padding-top: 30px;
+    background-color: goldenrod;
+  }
+
+  .footer {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    border-radius: 25px;
+    background-color: green;
+  }
+
+  /* ul>li {
+    height: 100px;
+  } */
+</style>
+
+<body>
+  <div class="box_wrap">
+    <div class="title">标题</div>
+    <div class="content">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+      </ul>
+    </div>
+    <div class="footer">添加</div>
+  </div>
+</body>
+
+</html>

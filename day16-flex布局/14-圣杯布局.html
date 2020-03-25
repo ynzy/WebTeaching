@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .box_wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .title {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: honeydew;
+    background-color: black;
+  }
+
+  .content {}
+
+  .footer {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    /* border-radius: 25px; */
+    background-color: green;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+  }
+
+  main {
+    flex: 1;
+    background: orange;
+  }
+
+  nav {
+    order: -1;
+    background: palegreen;
+  }
+
+  aside {
+    background: pink;
+  }
+
+  nav,
+  aside {
+    flex: 0 0 100px;
+  }
+
+  /* 小于768宽度所应用的样式 */
+  @media(max-width: 768px) {
+    .content {
+      flex-direction: column;
+      flex: 1;
+    }
+
+    main,
+    nav,
+    aside {
+      flex: auto;
+      /* background: red; */
+    }
+  }
+</style>
+
+<body>
+  <div class="box_wrap">
+    <div class="title">标题</div>
+    <div class="content">
+      <main>主题内容</main>
+      <nav>左侧边栏</nav>
+      <aside>右侧边栏</aside>
+    </div>
+    <div class="footer">底部</div>
+  </div>
+</body>
+
+</html>
