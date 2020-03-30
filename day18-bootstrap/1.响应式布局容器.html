@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  div {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: pink;
+  }
+
+  @media screen and (max-width: 767px) {
+    div {
+      width: 750px;
+      background-color: #000;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    div {
+      width: 768px;
+      background-color: green;
+    }
+  }
+
+  @media screen and (min-width: 991px) {
+    div {
+      width: 980px;
+      background-color: orangered;
+    }
+  }
+
+  @media screen and (min-width: 1199px) {
+    div {
+      width: 1200px;
+      background-color: purple;
+    }
+  }
+</style>
+
+<body>
+  <div></div>
+</body>
+
+</html>
