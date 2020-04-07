@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div></div>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+  <script>
+    // 获取url上的query参数方法
+    function getQueryParams() {
+      var url = document.location.toString()
+      // 如果url中有特殊字符则需要进行一下解码
+      url = decodeURI(url)
+      var arr1 = url.split("?");
+      var obj = {}
+      if (arr1.length > 1) {
+        var arr2 = arr1[1].split("&");
+        for (var i = 0; i < arr2.length; i++) {
+          var curArr = arr2[i].split("=");
+          obj[curArr[0]] = decodeURIComponent(curArr[1])
+        }
+      }
+      return obj
+    }
+    var urlParam = getQueryParams()
+    console.log(urlParam);
+
+    /* 
+    1. jquery 前后台交互
+    2. 屏蔽敏感信息
+      需要屏蔽那些敏感信息
+    3. 手机号加密  
+       https://blog.csdn.net/xin6841414/article/details/53494971
+      1. 中间4位显示*   159****8888
+      https://blog.csdn.net/su1573/article/details/82500608
+    4. 编码解码--
+    https://www.w3school.com.cn/js/jsref_decodeURI.asp
+    https://www.w3school.com.cn/jsref/jsref_decodeURIComponent.asp
+    5. 静态页，动态页
+
+    我访问了一个静态页，我怎么看接口
+    6. ejs js模板引擎 动态页
+    数据交互
+
+    */
+
+    /**
+   请求参数：
+   1. query形式的 url?属性名=属性值&属性名=属性值
+    */
+    /* $(function () {
+      //请求参数
+      var param = {
+        a: '1',
+        b: '1'
+      };
+      var userid = urlParam.userid;
+      var usernmae = urlParam.username
+      console.log(userid);
+      console.log(usernmae);
+
+      //
+      $.ajax({
+        //请求地址 
+        url: "http://127.0.0.1/admin/list?userid=" + userid + '&username=' + username,
+        //请求方式
+        type: "POST",
+        //请求的媒体类型
+        contentType: "application/json;charset=UTF-8",
+        //数据，json字符串
+        data: JSON.stringify(param),
+        //请求成功
+        success: function (res) {
+          console.log(res);
+        },
+        //请求失败，包含具体的错误信息
+        error: function (e) {
+          console.log(e.status);
+          console.log(e.responseText);
+        },
+        // 不管请求成功与否都会执行
+        complete: function () {
+          //
+        }
+      });
+    }); */
+    /*
+    一周100，3次课，1-2小时
+    一周50，解答问题，给教学路线，偶尔讲下课
+    */
+    //  领导提要求，
+    // 问清楚要做什么
+    // 想要什么效果
+    // 有没有相关资料可以参考
+    // 完成时间
+    var result = {
+      userId: '1123',
+      username: 'zhangsan',
+      sex: 'nan'
+    }
+    delete result.sex
+    console.log(result);
+    var div = document.querySelector('div')
+    div.innerHTML = result.username
+  </script>
+</body>
+
+</html>
