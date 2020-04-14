@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS获取手机型号和系统</title>
+</head>
+
+<body>
+  <button onclick="login()">登录</button>
+  <div id="app"></div>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="mobile-detect.min.js"></script> <!-- mobile-detect可以通过npm下载 -->
+  <script>
+    function login() {
+      //判断数组中是否包含某字符串
+      Array.prototype.contains = function (needle) {
+        for (i in this) {
+          if (this[i].indexOf(needle) > 0)
+            return i;
+        }
+        return -1;
+      }
+      var device_type = navigator.userAgent; //获取userAgent信息
+      console.log(device_type); //打印到页面
+      var md = new MobileDetect(device_type); //初始化mobile-detect
+      var os = md.os(); //获取系统
+      var model = "";
+      if (os == "iOS") { //ios系统的处理
+        os = md.os() + md.version("iPhone");
+        model = md.mobile();
+      } else if (os == "AndroidOS") { //Android系统的处理
+        os = md.os() + md.version("Android");
+        var sss = device_type.split(";");
+        var i = sss.contains("Build/");
+        if (i > -1) {
+          model = sss[i].substring(0, sss[i].indexOf("Build/"));
+        }
+      }
+
+      console.log(os + "---" + model); //打印系统版本和手机型号
+      $('#app').html(device_type + '</br></br>' + os + "---" + model)
+    }
+    //判断数组中是否包含某字符串
+
+    Array.prototype.contains = function (needle) {
+      for (i in this) {
+        if (this[i].indexOf(needle) > 0)
+          return i;
+      }
+      return -1;
+    }
+    var device_type = navigator.userAgent; //获取userAgent信息
+    console.log(device_type); //打印到页面
+    var md = new MobileDetect(device_type); //初始化mobile-detect
+    var os = md.os(); //获取系统
+    var model = "";
+    if (os == "iOS") { //ios系统的处理
+      os = md.os() + md.version("iPhone");
+      model = md.mobile();
+
+    } else if (os == "AndroidOS") { //Android系统的处理
+
+      os = md.os() + md.version("Android");
+      var sss = device_type.split(";");
+      var i = sss.contains("Build/");
+      if (i > -1) {
+        model = sss[i].substring(0, sss[i].indexOf("Build/"));
+      }
+    }
+
+    console.log(os + "---" + model); //打印系统版本和手机型号
+
+    $('#app').html(device_type + '</br></br>' + os + "---" + model)
+  </script>
+</body>
+
+</html>
