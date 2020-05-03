@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul>
+    <li>我是li</li>
+    <li>我是li</li>
+    <li>我是li</li>
+    <li>我是li</li>
+  </ul>
+  <script>
+    var ul = document.querySelector('ul')
+    var lis = ul.querySelectorAll('li')
+    console.log(lis);
+    console.log(ul.childNodes);
+    console.log(ul.children);
+    console.log(ul.firstChild);
+    console.log(ul.lastChild);
+    console.log(ul.firstElementChild);
+    console.log(ul.lastElementChild);
+    console.log(ul.children[0]);
+    console.log(ul.children[ul.children.length - 1]);
+
+
+  </script>
+</body>
+
+</html>

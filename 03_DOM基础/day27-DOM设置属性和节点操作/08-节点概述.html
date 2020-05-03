@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="grandpa">
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </div>
+  <script>
+    var parent = document.querySelector('.parent')
+    console.log(parent);
+    var child = document.querySelector('.child')
+    console.log(child);
+    console.log(child.parentNode);
+    var grandpa = document.querySelector('.grandpa')
+    console.log(grandpa.parentNode);
+    console.log(document.querySelector('html').parentNode);
+
+  </script>
+</body>
+
+</html>
