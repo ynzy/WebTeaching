@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="inner"></div>
+  <div class="inner2"></div>
+  <script>
+    console.time();
+    // 不可取
+    var inner = document.querySelector('.inner')
+    for (var i = 0; i < 100; i++) {
+      inner.innerHTML += '<a href="#">百度</a>'
+    }
+    console.timeEnd();
+    console.log('---------');
+
+    console.time();
+    var inner2 = document.querySelector('.inner2')
+    var arr = []
+    for (var i = 0; i < 100; i++) {
+      arr.push('<a href="#">百度</a>')
+    }
+    inner.innerHTML = arr.join('')
+    console.timeEnd();
+  </script>
+</body>
+
+</html>

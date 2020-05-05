@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul>
+    <li>知否知否，点我应有弹框在手！1</li>
+    <li>知否知否，点我应有弹框在手！2</li>
+    <li>知否知否，点我应有弹框在手！3</li>
+    <li>知否知否，点我应有弹框在手！4</li>
+    <li>知否知否，点我应有弹框在手！5</li>
+  </ul>
+  <script>
+    var lis = document.querySelectorAll('li')
+    var ul = document.querySelector('ul')
+    // 利用事件冒泡，做了事件委托
+    ul.addEventListener('click', function (e) {
+      console.log(this);
+      console.log(e.target);
+      // 点击当前的li 背景变成红色
+      e.target.style.background = 'red'
+
+    })
+  </script>
+</body>
+
+</html>
