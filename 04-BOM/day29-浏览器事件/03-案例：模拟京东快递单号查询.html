@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .con {
+    display: none;
+  }
+</style>
+
+<body>
+  <div class="search">
+    <div class="con">123</div>
+    <input type="text" placeholder="请输入您的快递单号" class="jd">
+  </div>
+  <script>
+    var con = document.querySelector('.con')
+    var jd = document.querySelector('.jd')
+    jd.addEventListener('keyup', function () {
+      if (this.value) {
+        con.style.display = 'block';
+        con.innerHTML = this.value
+      } else {
+        con.style.display = 'none'
+      }
+    })
+    jd.addEventListener('blur', function () {
+      con.style.display = 'none'
+    })
+    jd.addEventListener('focus', function () {
+      if (this.value) {
+        con.style.display = 'block';
+        con.innerHTML = this.value
+      }
+    })
+  </script>
+</body>
+
+</html>

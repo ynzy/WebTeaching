@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function fn(callback) {
+      callback('1')
+    }
+    fn(function (n) {
+      console.log(n);
+
+    })
+    // 超时
+    var time = setTimeout(function () {
+      console.log('一秒');
+    }, 5000)
+    clearTimeout(time)
+
+    var newtime = setInterval(function () {
+      console.log('--------');
+      clearInterval(newtime)
+    }, 1000);
+  </script>
+</body>
+
+</html>
