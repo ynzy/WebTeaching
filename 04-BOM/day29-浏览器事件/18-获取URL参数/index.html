@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div></div>
+  <script>
+    console.log(location.search);
+    var params = location.search.substring(1)
+    console.log(params);
+    // 2. 利用=把字符串分割为数组 split('=');
+    var arr = params.split('=')
+    console.log(arr);
+    var div = document.querySelector('div')
+    div.innerHTML = arr[1] + '欢迎您'
+
+    function getQueryParams() {
+      var url = document.location.toString()
+      // 如果url中有特殊字符则需要进行一下解码
+      url = decodeURI(url)
+      var arr1 = url.split("?");
+      var obj = {}
+      if (arr1.length > 1) {
+        console.log(arr1[1]);
+
+        var arr2 = arr1[1].split("&");
+        console.log(arr2);
+        for (var i = 0; i < arr2.length; i++) {
+          var curArr = arr2[i].split("=");
+          console.log(curArr);
+          obj[curArr[0]] = decodeURIComponent(curArr[1])
+        }
+      }
+      return obj
+    }
+    getQueryParams()
+    // console.log(getQueryParams());
+    function getQueryParamByKey(paramName) {
+      var url = document.location.toString()
+      // 如果url中有特殊字符则需要进行一下解码
+      url = decodeURI(url)
+      var arrObj = url.split("?");
+      if (arrObj.length > 1) {
+        var arrPara = arrObj[1].split("&");
+        var arr;
+        for (var i = 0; i < arrPara.length; i++) {
+          arr = arrPara[i].split("=");
+          if (arr != null && arr[0] == paramName) {
+            return decodeURIComponent(arr[1]);
+          }
+        }
+        return "";
+      } else {
+        return "";
+      }
+    }
+    console.log(getQueryParamByKey('name'));
+
+  </script>
+</body>
+
+</html>

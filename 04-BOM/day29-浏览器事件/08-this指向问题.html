@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button></button>
+  <script>
+    /* console.log(this);
+    function fn() {
+      console.log(this);
+    } */
+    // fn()
+    /* window.setTimeout(function () {
+      console.log(this);
+
+    })
+    setTimeout(function () {
+      console.log(this);
+    }) */
+    console.log('-------');
+
+    var obj = {
+      sayHi: function () {
+        console.log(this);
+
+      }
+    }
+    obj.sayHi()
+
+    function Person() {
+      console.log(this);
+
+    }
+    var person = new Person()
+    var btn = document.querySelector('button')
+    btn.addEventListener('click', function () {
+      console.log(this);
+
+    })
+  </script>
+</body>
+
+</html>

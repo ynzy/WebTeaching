@@ -1,0 +1,1 @@
+const demo = '/employee/delete'
