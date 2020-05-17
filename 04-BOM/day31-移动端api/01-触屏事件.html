@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		div {
+			width: 30px;
+			height: 30px;
+			background: pink;
+		}
+		.current {
+			background: blue;
+		}
+		.current2 {
+			background: black;
+		}
+	</style>
+	<body>
+		<div></div>
+		<button>点击</button>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+		<script>
+			var div = document.querySelector('div')
+			var btn = document.querySelector('button')
+			var lis = document.querySelectorAll('li')
+			div.addEventListener('touchstart', function (e) {
+				console.log(e)
+			})
+			div.addEventListener('touchmove', function (e) {
+				console.log(e)
+			})
+			div.addEventListener('touchend', function (e) {
+				console.log(e)
+			})
+			var flag = false
+			btn.addEventListener('touchstart', function () {
+				if (!flag) {
+					flag = true
+					div.classList.remove('current2')
+					div.classList.add('current')
+				} else {
+					flag = false
+					div.classList.remove('current')
+					div.classList.add('current2')
+				}
+			})
+			for (var i = 0; i < lis.length; i++) {
+				lis[i].onclick = function () {
+					this.classList.toggle('current')
+				}
+			}
+		</script>
+	</body>
+</html>

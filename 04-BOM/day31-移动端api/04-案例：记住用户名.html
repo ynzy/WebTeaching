@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div>
+			<input type="text" id="username" />
+		</div>
+		<div><input type="checkbox" name="" id="remeber" />记住用户名</div>
+		<script>
+			/**
+			 * 是否去除所有空格
+			 * @param str
+			 * @param is_global 如果为g或者G去除所有的
+			 * @returns
+			 */
+			function Trim(str, is_global) {
+				var result
+				result = str.replace(/(^\s+)|(\s+$)/g, '')
+				if (is_global.toLowerCase() == 'g') {
+					result = result.replace(/\s/g, '')
+				}
+				return result
+			}
+
+			var username = document.querySelector('#username')
+			var remeber = document.querySelector('#remeber')
+			if (localStorage.getItem('username')) {
+				username.value = localStorage.getItem('username')
+				remeber.checked = true
+			}
+			remeber.addEventListener('change', function () {
+				console.log(username.value)
+
+				//  数据处理
+				console.log(Trim(username.value, 'g'))
+				if (this.checked) {
+					localStorage.setItem('username', Trim(username.value, 'g'))
+				} else {
+					localStorage.removeItem('username')
+				}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			var obj = {
+				name: 'zhangsan',
+				age: 12,
+				sex: '男'
+			}
+			sessionStorage.setItem('key', '123')
+			sessionStorage.setItem('personal', JSON.stringify(obj))
+			console.log(sessionStorage.getItem('key'))
+			console.log(JSON.parse(sessionStorage.getItem('personal')))
+			// sessionStorage.removeItem('key')
+			// sessionStorage.clear()
+		</script>
+	</body>
+</html>

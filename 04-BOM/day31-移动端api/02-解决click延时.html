@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<div onclick="fn()">点击这个元素</div>
+		<script src="./fastclick.js"></script>
+		<script>
+			if ('addEventListener' in document) {
+				document.addEventListener(
+					'DOMContentLoaded',
+					function () {
+						FastClick.attach(document.body)
+					},
+					false
+				)
+			}
+			function fn() {
+				console.time()
+				console.log('执行方法')
+				console.timeEnd()
+			}
+		</script>
+	</body>
+</html>
