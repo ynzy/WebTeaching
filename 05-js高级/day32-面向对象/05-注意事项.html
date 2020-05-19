@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<button>点击</button>
+		<script>
+			var that = null
+			class Star {
+				constructor(name, age) {
+					that = this
+					this.name = name
+					this.age = age
+					this.btn = document.querySelector('button')
+					this.btn.onclick = this.sing //3. 绑定事件之后this指向的就是触发事件的事件源
+				}
+				sing() {
+					console.log(this)
+					// console.log(that == this) 2. 自定义的方法,一般也指向的new出来的实例对象
+					console.log(this.name)
+					console.log(that.name)
+				}
+			}
+			var ldh = new Star('刘德华', 12)
+			console.log(that == ldh) // 1. onstructor中的this指向的是new出来的实例对象
+			ldh.sing()
+		</script>
+	</body>
+</html>
