@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style-type: none;
+}
+.step_wrap {
+  padding: 0 20px;
+}
+.step_wrap ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.step_wrap ul li {
+  flex: 1;
+  position: relative;
+  height: 50px;
+}
+.step_wrap ul li .number {
+  width: 20px;
+  text-align: center;
+  height: 20px;
+  border-radius: 50%;
+  background: green;
+}
+.step_wrap ul li::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: red;
+}
+.step_wrap ul .step_end {
+  flex: inherit;
+}
