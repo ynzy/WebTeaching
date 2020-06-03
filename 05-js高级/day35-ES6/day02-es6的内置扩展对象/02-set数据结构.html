@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+		<input type="text" />
+		<button>搜索</button>
+		<span></span>
+		<script>
+			var input = document.querySelector('input')
+			var button = document.querySelector('button')
+			let span = document.querySelector('span')
+			let arr = []
+			button.addEventListener('click', () => {
+				let val = input.value
+				arr.push(val)
+				let set = new Set(arr)
+				console.log(set)
+				let newArr = [...set].join(',')
+				span.innerHTML = newArr
+			})
+			let arrayLike = {
+				'0': 1,
+				'1': 2,
+				length: 2
+			}
+			console.log(arrayLike)
+			console.log(Array.from(arrayLike))
+
+			let lis = document.querySelectorAll('li')
+			console.log(lis)
+			console.log(Array.from(lis))
+			let arr1 = [1, 2, 3]
+			console.log(arr1)
+		</script>
+	</body>
+</html>
