@@ -3,6 +3,8 @@ class Tab {
 	constructor(id) {
 		// 获取元素
 		that = this
+		console.log(this)
+
 		this.main = document.querySelector(id)
 		this.add = this.main.querySelector('.tabadd')
 		// li的父元素
@@ -32,10 +34,10 @@ class Tab {
 	}
 	// 1. 切换功能
 	toggleTab() {
-		// console.log(this.index);
+		// console.dir(this)
 		that.clearClass()
-		this.className = 'liactive'
-		that.sections[this.index].className = 'conactive'
+		this.className = 'liactive' // 当前项添加liactiive类
+		that.sections[this.index].className = 'conactive' // 当前项对应的内容项添加conactive类
 	}
 	// 清除所有li 和section 的类
 	clearClass() {
@@ -48,12 +50,13 @@ class Tab {
 	addTab() {
 		that.clearClass()
 		// (1) 创建li元素和section元素
-		var random = Math.random()
+		var random = Math.random() // 随机数
 		var li = '<li class="liactive"><span>新选项卡</span><span class="iconfont icon-guanbi"></span></li>'
 		var section = '<section class="conactive">测试 ' + random + '</section>'
 		// (2) 把这两个元素追加到对应的父元素里面
 		that.ul.insertAdjacentHTML('beforeend', li)
 		that.fsection.insertAdjacentHTML('beforeend', section)
+		// 进行初始化操作
 		that.init()
 	}
 	// 3. 删除功能
@@ -95,4 +98,11 @@ class Tab {
 		}
 	}
 }
-new Tab('#tab')
+let obj = new Tab('#tab')
+// console.log(this)
+
+// console.log(obj)
+// let arr = new Array()
+// arr.push()
+// arr.sum()
+// console.log(arr)
