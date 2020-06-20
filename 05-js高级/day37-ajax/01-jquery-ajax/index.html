@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<button onclick="getuserlist()">获取用户列表</button>
+		<script src="../jquery-1.10.1.js"></script>
+		<script>
+			// ajax 是一种前后端异步交互的一种标准
+			/*
+      http请求
+        get请求 获取指定的资源数据，获取数据
+        post请求 将前端数据提交给后台进行处理，提交数据
+        $.get() 方法通过 HTTP GET 请求从服务器上请求数据
+        $.post() 方法
+      */
+			/*
+      json是一种数据格式
+      json序列化
+     */
+			// 对象
+			let user = {
+				data: {
+					total: 4,
+					pagenum: 1,
+					users: [
+						{ id: 508, role_name: '主管', username: 'asdf1', create_time: 1511853015, mobile: '123123', email: 'adfsa@qq.com', mg_state: true },
+						{ id: 502, role_name: '测试角色2', username: 'linken', create_time: 1486720211, mobile: '1213213123', email: 'asdf@qq.com', mg_state: false },
+						{ id: 509, role_name: 'test', username: 'asdf123', create_time: 1511853353, mobile: '1111', email: 'asdf@qq.com', mg_state: false },
+						{ id: 500, role_name: '超级管理员', username: 'admin', create_time: 1486720211, mobile: '12345678', email: 'adsfad@qq.com', mg_state: true }
+					]
+				},
+				meta: { msg: '获取管理员列表成功', status: 200 }
+			}
+			let base_url = 'http://127.0.0.1:8888/api/private/v1'
+			let token = ''
+			$.post(
+				base_url + '/login',
+				{
+					username: 'admin',
+					password: '123456'
+				},
+				function (response, status) {
+					// 发送服务器请求，获取到的响应数据
+					// console.log(response)
+
+					// console.log(status)
+					token = response.data.token
+				}
+			)
+			function getuserlist() {
+				console.log('加载中。。。')
+				/* $.get(`${base_url}/users?query=''&pagenum=1&pagesize=10`, function (res, status) {
+					console.log(res)
+					console.log(status)
+        }) */
+				// jQuery.ajax([settings])
+				$.ajax({
+					url: `${base_url}/users`,
+					type: 'get', //请求类型
+					data: {
+						query: '',
+						pagenum: 1,
+						pagesize: 10
+					},
+					dataType: 'json', // json 响应数据结构
+					headers: {
+						'Content-Type': 'application/json;charset=utf8',
+						Authorization: token
+					},
+					success: function (res) {
+						console.log('成功')
+						// console.log(res)
+						// 对象 转 json
+						let result = JSON.stringify(res) // json
+						// console.log(result)
+						// json 转 对象
+						let newdata = JSON.parse(result)
+						// console.log(newdata)
+					},
+					error: function (error) {
+						console.log('失败')
+						console.log(error)
+					},
+					complete: function () {
+						console.log('取消加载')
+						console.log('无论成功与否，我都会执行到')
+					}
+				})
+			}
+			// https://www.cnblogs.com/ccyq/p/11287943.html
+			$.ajax({
+				url: `http://localhost:3000/data`,
+				type: 'get', //请求类型
+				success: function (res) {
+					console.log(res)
+				},
+				error: function (error) {
+					console.log(error)
+				}
+			})
+			/*
+        JSONP 是解决跨域问题的一种请求技术
+        URL                      说明       是否允许通信
+        http://www.a.com/a.js
+        http://www.a.com/b.js     同一域名下   允许
+
+        http://www.a.com/lab/a.js
+        http://www.a.com/script/b.js 同一域名下不同文件夹 允许
+
+        http://www.a.com:8000/a.js
+        http://www.a.com:80/b.js     同一域名，不同端口  不允许
+
+        http://www.a.com/a.js
+        https://www.a.com/b.js 同一域名，不同协议 不允许
+
+        http://www.a.com/a.js
+        http://70.32.92.74/b.js 域名和域名对应ip 不允许
+
+        http://www.a.com/a.js
+        http://script.a.com/b.js 主域相同，子域不同 不允许（cookie这种情况下也不允许访问）
+
+        http://www.a.com/a.js
+        http://a.com/b.js 同一域名，不同二级域名（同上） 不允许（cookie这种情况下也不允许访问）
+
+        http://www.cnblogs.com/a.js
+        http://www.a.com/b.js 不同域名 不允许
+
+        作者：Damonare
+        链接：https://juejin.im/post/5815f4abbf22ec006893b431
+        来源：掘金
+        著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+      */
+
+			/*
+        Access to XMLHttpRequest at 'http://127.0.0.1:8888/api/private/v1/login' 
+        from origin 'http://192.168.0.173:8080' has been blocked by CORS policy: 
+        No 'Access-Control-Allow-Origin' header is present on the requested resource.
+      */
+		</script>
+	</body>
+</html>
