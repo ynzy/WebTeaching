@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<script src="../common/js/template-web.js"></script>
+	<script src="../common/js/jquery-1.10.1.js"></script>
+	<body>
+		<div id="detailContent">
+			<script id="detailBoxRe" type="text/html">
+				{{each list as item i}}
+				<div>
+				  <div>id: {{item.id}}</div>
+				  <div>姓名：{{item.name}}</div>
+				  <div>年龄：{{item.age}}</div>
+				</div>
+				{{/each}}
+			</script>
+		</div>
+		<script>
+			var list = [
+				{
+					id: '1',
+					name: 'zhangsan',
+					age: 18
+				},
+				{
+					id: '2',
+					name: 'welj l',
+					age: 13
+				},
+				{
+					id: '4',
+					name: 'asdfj l',
+					age: 156
+				}
+			]
+			document.getElementById('detailContent').innerHTML = template('detailBoxRe', {
+				list: list
+			})
+		</script>
+	</body>
+</html>
