@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		.box {
+			width: 500px;
+			margin: 100px auto;
+		}
+		button {
+			width: 150px;
+			height: 50px;
+			margin: 0 20px;
+			background: #cccccc;
+			outline: none;
+		}
+		.active {
+			background: rgba(8, 174, 240, 0.863);
+		}
+	</style>
+	<body>
+		<div class="box">
+			<button class="btn1 active" data-type="1">有处理</button>
+			<button class="btn2" data-type="2">未处理</button>
+		</div>
+	</body>
+	<script>
+		var flag = false
+		var type = null
+		var btns = document.querySelectorAll('button')
+		for (let i = 0; i < btns.length; i++) {
+			console.dir(btns[i])
+			if (!flag) {
+				console.log(btns[i].classList)
+				btns[i].classList.remove('active')
+			}
+			btns[i].onclick = function () {
+				console.log(this)
+				if (!flag) {
+					// 当前没有选中的
+					for (let i = 0; i < btns.length; i++) {
+						btns[i].classList.remove('active')
+					}
+					type = this.dataset.type
+					this.classList.add('active')
+					flag = true
+				} else {
+					// 当前有选中的
+					console.log('有选中的')
+					console.log(this.dataset.type)
+					var currentType = this.dataset.type
+					if (type == currentType) {
+						// 如果选择的还是当前项
+						this.classList.remove('active')
+						flag = false
+					} else {
+						// 如果选择的不是当前项
+						for (let i = 0; i < btns.length; i++) {
+							btns[i].classList.remove('active')
+						}
+						type = this.dataset.type
+						this.classList.add('active')
+						flag = true
+					}
+				}
+			}
+		}
+	</script>
+</html>
