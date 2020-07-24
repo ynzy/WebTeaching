@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="./ajax.js"></script>
+  <script>
+    
+    ajax({
+      // 请求方式
+      type: 'post',
+      // 请求地址
+      url: 'http://localhost:3000/first',
+      data:{
+        name: 'zhangsan',
+        age: 20
+      },
+      header:{
+        // 'Content-Type': 'application/x-www-form-urlencoded'
+        'Content-Type': 'application/json'
+      },
+      success:function(res){
+        // console.log(res); 
+      }
+    })
+   		/*
+			请求参数要考虑的问题
+
+				1.请求参数位置的问题
+
+					将请求参数传递到ajax函数内部, 在函数内部根据请求方式的不同将请求参数放置在不同的位置
+
+					get 放在请求地址的后面
+
+					post 放在send方法中
+
+				2.请求参数格式的问题
+
+					application/x-www-form-urlencoded
+
+						参数名称=参数值&参数名称=参数值
+
+						name=zhangsan&age=20
+
+					application/json
+
+						{name: 'zhangsan', age: 20}
+
+					1.传递对象数据类型对于函数的调用者更加友好
+					2.在函数内部对象数据类型转换为字符串数据类型更加方便
+
+		*/
+  </script>
+</body>
+</html>
