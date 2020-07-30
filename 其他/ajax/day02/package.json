@@ -4,16 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev01": "node ./day01/app.js",
-    "dev02": "node ./day02/app.js",
-    "dev03": "node ./day03/app.js",
-    "dev04": "node ./day04/app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "formidable": "^1.2.2"
+    "formidable": "^1.2.1"
   }
 }
