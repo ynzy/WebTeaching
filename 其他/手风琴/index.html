@@ -1,0 +1,116 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>垂直手风琴</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .listbox {
+            width: 500px;
+            height: 400px;
+            margin: 50px auto;
+        }
+
+        .list {
+            position: relative;
+        }
+
+        .list a {
+            display: block;
+            height: 35px;
+            background: linear-gradient(#eeeeee, #8f8f8f);
+            text-decoration: none;
+            padding-left: 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #424242;
+            line-height: 35px;
+        }
+
+        .list p {
+            /* 超出区域出现滚动条 */
+            overflow: auto;
+            height: 0px;
+            padding-left: 10px;
+            margin: 5px auto;
+            transition: 0.7s linear;
+        }
+
+        .list span {
+            width: 0;
+            height: 0;
+            /* border-left: 5px solid  transparent 代表透明 */
+            border-left: 5px solid rgba(0, 0, 0, 0);
+            border-right: 5px solid rgba(0, 0, 0, 0);
+            border-top: 5px solid white;
+            border-bottom: 5px solid rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .list:target p {
+            height: 100px;
+        }
+
+        .list a:hover,
+        .list:target a {
+            background: linear-gradient(#6bb2ff, #2288dd);
+            color: white;
+        }
+
+        .list:target span {
+            /* transform: rotate(-90deg); */
+            border-top: 5px solid transparent;
+            border-left: 5px solid #fff;
+            right: 10px;
+        }
+        /*
+          锚点 :css 实现点击效果变样式,就用锚点 ,单页面进行跳转的时候
+          2.定位
+          3.边框写三角形
+          4.当前活动窗口的控制 :target
+         */
+    </style>
+</head>
+
+<body>
+    <div class="listbox">
+        <div class="list" id="listOne">
+            <a href="#listOne">小狗</a>
+            <!-- 边框三角形 -->
+            <span></span>
+            <p>壬戌之秋，七月既望，苏子与客泛舟游于赤壁之下。清风徐来，水波不兴。举酒属客，诵明月之诗，歌窈窕之章。少焉，月出于东山之上， 徘徊于斗牛之间。白露横江，水光接天。纵一苇之所如，凌万顷之茫然。浩浩乎如冯虚御风，而不知其所止；飘飘乎如遗世独立，羽化而登仙。 于是饮酒乐甚，扣舷而歌之。歌曰：“桂棹兮兰桨，击空明兮溯流光。渺渺兮予怀，望美人兮天一方。”客有吹洞箫者，倚歌而和之。其声呜呜然，如怨如慕， 如泣如诉，余音袅袅，不绝如缕。舞幽壑之潜蛟，泣孤舟之嫠妇。 苏子愀然，正襟危坐而问客曰：“何为其然也？”客曰：“月明星稀，乌鹊南飞，此非曹孟德之诗乎？西望夏口，
+                东望武昌，山川相缪，郁乎苍苍，此非孟德之困于周郎者乎？方其破荆州，下江陵，顺流而东也，舳舻千里，旌旗蔽空，酾酒临江
+            </p>
+
+        </div>
+        <div class="list" id="listTwo">
+            <a href="#listTwo">小狗</a>
+            <!-- 边框三角形 -->
+            <span></span>
+            <p>壬戌之秋，七月既望，苏子与客泛舟游于赤壁之下。清风徐来，水波不兴。举酒属客，诵明月之诗，歌窈窕之章。少焉，月出于东山之上， 徘徊于斗牛之间。白露横江，水光接天。纵一苇之所如，凌万顷之茫然。浩浩乎如冯虚御风，而不知其所止；飘飘乎如遗世独立，羽化而登仙。 于是饮酒乐甚，扣舷而歌之。歌曰：“桂棹兮兰桨，击空明兮溯流光。渺渺兮予怀，望美人兮天一方。”客有吹洞箫者，倚歌而和之。其声呜呜然，如怨如慕， 如泣如诉，余音袅袅，不绝如缕。舞幽壑之潜蛟，泣孤舟之嫠妇。 苏子愀然，正襟危坐而问客曰：“何为其然也？”客曰：“月明星稀，乌鹊南飞，此非曹孟德之诗乎？西望夏口，
+                东望武昌，山川相缪，郁乎苍苍，此非孟德之困于周郎者乎？方其破荆州，下江陵，顺流而东也，舳舻千里，旌旗蔽空，酾酒临江
+            </p>
+
+        </div>
+        <div class="list" id="listThree">
+            <a href="#listThree">小狗</a>
+            <!-- 边框三角形 -->
+            <span></span>
+            <p>壬戌之秋，七月既望，苏子与客泛舟游于赤壁之下。清风徐来，水波不兴。举酒属客，诵明月之诗，歌窈窕之章。少焉，月出于东山之上， 徘徊于斗牛之间。白露横江，水光接天。纵一苇之所如，凌万顷之茫然。浩浩乎如冯虚御风，而不知其所止；飘飘乎如遗世独立，羽化而登仙。 于是饮酒乐甚，扣舷而歌之。歌曰：“桂棹兮兰桨，击空明兮溯流光。渺渺兮予怀，望美人兮天一方。”客有吹洞箫者，倚歌而和之。其声呜呜然，如怨如慕， 如泣如诉，余音袅袅，不绝如缕。舞幽壑之潜蛟，泣孤舟之嫠妇。 苏子愀然，正襟危坐而问客曰：“何为其然也？”客曰：“月明星稀，乌鹊南飞，此非曹孟德之诗乎？西望夏口，
+                东望武昌，山川相缪，郁乎苍苍，此非孟德之困于周郎者乎？方其破荆州，下江陵，顺流而东也，舳舻千里，旌旗蔽空，酾酒临江
+            </p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

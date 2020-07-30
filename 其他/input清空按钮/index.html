@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .invite-code-panel .editable-clear-x {
+  right: 15px;
+  display: none;
+}
+
+.invite-code-panel .invite-code-input:valid + .editable-clear-x {
+  display: inline;
+}
+</style>
+<body>
+ <div class="invite-code-panel">
+  <input type="text" class="invite-code-input" placeholder="请输入" required>
+  <span class="editable-clear-x">x</span>
+</div>
+</body>
+</html>
