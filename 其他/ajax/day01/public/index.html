@@ -1,10 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<h2>欢迎，这是public文件夹中的index.html文件</h2>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>欢迎，这是public文件夹中的index.html文件</h2>
+		<script>
+			/* const util = {
+				demo() {
+					console.log('hello')
+				}
+			}
+			util.demo() */
+			// $.ajax()
+			// 闭包：一个内部函数可以访问外部函数变量的函数叫闭包
+			/* 		function fn(a) {
+				return (fn1 = () => {
+					console.log(a)
+				})
+			}
+			let r = fn(2)
+			console.log(r)
+			r() */
+			/* $.ajax({
+				url: '',
+				data: '',
+				success(res) {}
+			})
+			function getUserInfo(cb) {
+				request(url, (err, result) => {
+					if (err) {
+						if (cb) {
+							cb(err)
+						}
+						return
+					}
+					if (cb) {
+						cb(null, result.data)
+					}
+				})
+			} */
+			/* getUserInfo(function(err,res){
+
+			}) */
+			function request(url, cb) {
+				cb(null, { data: '111' })
+			}
+			function getUserInfoAsync() {
+				return new Promise((reslove, reject) => {
+					request('111', (err, result) => {
+						if (err) {
+							reject(err)
+							return
+						}
+						reslove(result.data)
+					})
+				})
+			}
+			// pendding
+			getUserInfoAsync()
+				.then(res => {
+					console.log(res)
+				})
+				.catch(err => {})
+
+			/* 	async function demo() {
+				try {
+					let res = await getUserInfoAsync()
+					console.log(res)
+				} catch (error) {
+					console.log(error)
+				}
+			}
+			demo() */
+		</script>
+	</body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		.grid {
+			display: grid;
+			grid-template-columns: 150px 150px 150px;
+			grid-template-rows: 150px 150px 150px;
+		}
+		.grid > div {
+			font-size: 20px;
+			font-weight: bold;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+		}
+		.grid > div:nth-child(1) {
+			background: #dd4637;
+		}
+		.grid > div:nth-child(2) {
+			background: #e99341;
+		}
+		.grid > div:nth-child(3) {
+			background: #64a553;
+		}
+		.grid > div:nth-child(4) {
+			background: #3176bc;
+		}
+		.grid > div:nth-child(5) {
+			background: #b67cac;
+		}
+		.grid > div:nth-child(6) {
+			background: #f2d3a4;
+		}
+		.grid > div:nth-child(7) {
+			background: #b2a884;
+		}
+		.grid > div:nth-child(8) {
+			background: #d4e3ae;
+		}
+		.grid > div:nth-child(9) {
+			background: #6fc5e8;
+		}
+	</style>
+	<body>
+		foo
+		<div class="grid">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+		</div>
+		bar
+	</body>
+</html>

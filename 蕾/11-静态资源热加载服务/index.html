@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		我的名字2324
+		<script>
+			/*
+        // 协议http 本地服务地址 端口：5500
+        http://127.0.0.1:5500/xxx.html
+        http://localhost:5500/xxx.html
+        // 局域网服务
+        http://192.168.0.173:5500/xxx.html
+
+
+        跨域：
+        现在的vue项目是前后端分离项目
+        vue中配置跨域： 只能在开发环境使用，上线之后是失效的
+        devServer: {
+          open: true, // 是否自动弹出浏览器页面
+          // host: 'localhost',
+          port: '9090',
+          https: false, // 是否使用https协议
+          hotOnly: true, // 是否开启热更新
+          proxy: null
+        }
+        生产环境配置跨域：
+          ngix配置代理 服务端，维护
+          coros：后台配置
+          // 设置跨域和相应数据格式 node
+          app.all('/api/*', function (req, res, next) {
+            res.header('Access-Control-Allow-Origin', '前台服务器地址')
+            res.header('Access-Control-Allow-Headers', 'X-Requested-With, mytoken')
+            res.header('Access-Control-Allow-Headers', 'X-Requested-With, Authorization')
+            res.setHeader('Content-Type', 'application/json;charset=utf-8')
+            res.header('Access-Control-Allow-Headers', 'Content-Type,Content-Length, Authorization, Accept,X-Requested-With')
+            res.header('Access-Control-Allow-Methods', 'PUT,POST,GET,DELETE,OPTIONS')
+            res.header('X-Powered-By', ' 3.2.1')
+            if (req.method == 'OPTIONS') {
+              res.send(200)
+            } else next()
+          })
+          java 拦截器 配置允许跨域
+        开发公众号不配置跨域
+        1. 前后端分离项目，前台开发环境还有办法结局跨域，线上没办法解决
+        2. 开发公众号需要配置白名单，域名，https，后台不解决跨域，没法保证数据流通
+        jsonp，请求微信服务器，第三方服务器，如果前台请求，就需要用到jsonp，
+        但是前台保存第三方服务的密钥，key，私密文件，不安全，容易出现被黑客侵袭的危险，如果出了这样的事我付不起责任
+        dome
+        
+    */
+		</script>
+	</body>
+</html>

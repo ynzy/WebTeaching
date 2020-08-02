@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.grid {
+			display: grid;
+			/* 默认情况下，容器元素都是块级元素，但也可以设成行内元素。 */
+			/* display: inline-grid; */
+			/* 
+				设为网格布局以后，容器子元素（项目）的
+				float、display: inline-block、display: table-cell、vertical-align和column-*
+				等设置都将失效。 
+			*/
+			/* 定义每一列的列宽 */
+			/* grid-template-columns: 150px 150px 150px; */
+			/* 定义每一行的行高 */
+			/* grid-template-rows: 150px 150px 150px; */
+
+			/* 除了使用绝对单位，也可以使用百分比。 */
+			/* grid-template-columns: 33.33% 33.33% 33.33%; */
+			/* grid-template-rows: 33.33% 33.33% 33.33%; */
+
+			/* repeat() 简化重复的值 第一个参数是重复的次数（上例是3），第二个参数是所要重复的值*/
+			/* grid-template-columns: repeat(3, 150px); */
+			/* grid-template-rows: repeat(3, 150px); */
+			/* repeat()重复某种模式也是可以的。 */
+			/* grid-template-columns: repeat(2, 100px 20px 80px); */
+			/* grid-template-rows: repeat(2, 80px); */
+
+			/* auto-fill 关键字 自动填充 */
+			/* grid-template-columns: repeat(auto-fill, 100px); */
+
+			/* fr 关键字 比例关系 如果两列的宽度分别为1fr和2fr，就表示后者是前者的两倍。*/
+			/* grid-template-columns: 1fr 2fr 1fr; */
+			/* fr可以与绝对长度的单位结合使用，这时会非常方便。 */
+			/* grid-template-columns: 150px 1fr 50px; */
+
+			/* minmax()函数产生一个长度范围，表示长度就在这个范围之中。它接受两个参数，分别为最小值和最大值。 */
+			/* grid-template-columns: 1fr 1fr minmax(100px, 2fr); */
+
+			/* auto 关键字 表示由浏览器自己决定长度。 */
+			/* grid-template-columns: 100px auto 100px; */
+
+			/* 网格线的名称 */
+			/* grid-template-columns: [c1] 100px [c2] auto [c3] 100px [c4]; */
+			/* grid-template-rows: [c1] 100px [c2] auto [c3] 100px [c4]; */
+
+			/* 布局实例 */
+			/* 两栏式布局 */
+			/* grid-template-columns: 70% 30%; */
+
+			/* 传统的十二网格布局 */
+			grid-template-columns: repeat(12, 1fr);
+		}
+		.grid > div {
+			font-size: 20px;
+			font-weight: bold;
+			/* width: 100px; */
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+		}
+		.grid > div:nth-child(1) {
+			background: #dd4637;
+		}
+		.grid > div:nth-child(2) {
+			background: #e99341;
+		}
+		.grid > div:nth-child(3) {
+			background: #64a553;
+		}
+		.grid > div:nth-child(4) {
+			background: #3176bc;
+		}
+		.grid > div:nth-child(5) {
+			background: #b67cac;
+		}
+		.grid > div:nth-child(6) {
+			background: #f2d3a4;
+		}
+		.grid > div:nth-child(7) {
+			background: #b2a884;
+		}
+		.grid > div:nth-child(8) {
+			background: #d4e3ae;
+		}
+		.grid > div:nth-child(9) {
+			background: #6fc5e8;
+		}
+	</style>
+	<body>
+		foo
+		<div class="grid">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+		</div>
+		bar
+	</body>
+</html>
